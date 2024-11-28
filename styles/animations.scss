@@ -1,0 +1,47 @@
+@keyframes moveFromTop {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromBotton {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.hero-title--animation {
+  animation: moveFromTop 1s ease-out;
+  animation-fill-mode: backwards;
+}
+.hero-image--animation {
+  animation: moveFromBotton 1s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 5s linear;
+  animation-fill-mode: backwards;
+}
