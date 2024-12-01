@@ -2,6 +2,7 @@ import styles from '@/components/home/hero/hero.module.scss'
 import Particles from '@/components/ui/particles'
 import {cn} from '@/lib/utils'
 import {useGSAP} from '@gsap/react'
+import gsap from 'gsap'
 import Image from 'next/image'
 import {useRef} from 'react'
 // import GlobeFront from 'svgs/globe-shape-front.svg'
@@ -10,51 +11,52 @@ import Features from './features'
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
 
-  if (sectionRef?.current) {
-    useGSAP(
-      () => {
-        const globeTween = gsap.timeline()
-        globeTween.to('#globe-back', {opacity: 0.4, duration: 1.5}, 0.5)
-        globeTween.to('#globe-front', {opacity: 1, duration: 1}, 1)
+  useGSAP(
+    () => {
+      const globeTween = gsap.timeline()
+      globeTween.to('#globe-back', {opacity: 0.4, duration: 1.5}, 0.5)
+      globeTween.to('#globe-front', {opacity: 1, duration: 1}, 1)
 
-        const heroTimeline = gsap.timeline({
-          repeat: -1,
-        })
+      const heroTimeline = gsap.timeline({
+        repeat: -1,
+      })
 
-        const features = document.querySelectorAll('.feature')
+      const features = document.querySelectorAll('.feature')
 
-        features.forEach((feature, index) => {
-          heroTimeline
-            .to(feature.querySelector('.feature-icon-box'), {
-              opacity: 1,
-              duration: 1.5,
-              delay: index === 0 ? 1.5 : -0.5,
-            })
-            .to(
-              feature.querySelector('.feature-icon-box'),
-              {
-                background: 'transparent',
-                border: 'none',
-                boxShadow: 'none',
-                duration: 1,
-              },
-              '>'
-            )
-            .to(
-              feature,
-              {border: '1px solid #969A9C', background: '#303233', duration: 1},
-              '<'
-            )
-            .to(feature.querySelector('p'), {opacity: 1, duration: 1}, '<')
-            .to(feature, {opacity: 0, duration: 0.5}, '+=1')
-        })
-      },
-      {
-        scope: sectionRef,
-      }
-    )
-  }
-
+      features.forEach((feature, index) => {
+        heroTimeline
+          .to(feature.querySelector('.feature-icon-box'), {
+            opacity: 1,
+            duration: 1.5,
+            delay: index === 0 ? 1.5 : -0.5,
+          })
+          .to(
+            feature.querySelector('.feature-icon-box'),
+            {
+              background: 'transparent',
+              border: 'none',
+              boxShadow: 'none',
+              duration: 1,
+            },
+            '>'
+          )
+          .to(
+            feature,
+            {
+              border: '1px solid #969A9C',
+              background: '#303233',
+              duration: 1,
+            },
+            '<'
+          )
+          .to(feature.querySelector('p'), {opacity: 1, duration: 1}, '<')
+          .to(feature, {opacity: 0, duration: 0.5}, '+=1')
+      })
+    },
+    {
+      scope: sectionRef,
+    }
+  )
   return (
     <section
       ref={sectionRef}
