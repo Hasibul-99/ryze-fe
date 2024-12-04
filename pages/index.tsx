@@ -1,3 +1,4 @@
+import Entertainment from '@/components/home/entertainment'
 import Hero from '@/components/home/hero'
 import Onboarding from '@/components/home/onboarding'
 import Platforms from '@/components/home/platforms'
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Platforms />
       <Onboarding />
+      <Entertainment />
     </Layout>
   )
 }
