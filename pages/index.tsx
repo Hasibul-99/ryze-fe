@@ -2,6 +2,8 @@ import Entertainment from '@/components/home/entertainment'
 import Hero from '@/components/home/hero'
 import Onboarding from '@/components/home/onboarding'
 import Platforms from '@/components/home/platforms'
+import PowerupTools from '@/components/home/powerup-tools'
+import TelcoPack from '@/components/home/telco-pack'
 import Layout from '@/components/layout'
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
@@ -17,6 +19,8 @@ export default function Home() {
       <Platforms />
       <Onboarding />
       <Entertainment />
+      <PowerupTools />
+      <TelcoPack />
     </Layout>
   )
 }
