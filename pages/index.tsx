@@ -4,6 +4,7 @@ import Hero from '@/components/home/hero'
 import Onboarding from '@/components/home/onboarding'
 import Platforms from '@/components/home/platforms'
 import PowerupTools from '@/components/home/powerup-tools'
+import Privileges from '@/components/home/privileges'
 import TelcoPack from '@/components/home/telco-pack'
 import Layout from '@/components/layout'
 import {useGSAP} from '@gsap/react'
@@ -23,6 +24,7 @@ export default function Home() {
       <PowerupTools />
       <TelcoPack />
       <FriendsAndCommunity />
+      <Privileges />
     </Layout>
   )
 }
