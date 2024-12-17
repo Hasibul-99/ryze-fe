@@ -1,4 +1,5 @@
 import Entertainment from '@/components/home/entertainment'
+import FriendsAndCommunity from '@/components/home/friends-and-community'
 import Hero from '@/components/home/hero'
 import Onboarding from '@/components/home/onboarding'
 import Platforms from '@/components/home/platforms'
@@ -21,6 +22,7 @@ export default function Home() {
       <Entertainment />
       <PowerupTools />
       <TelcoPack />
+      <FriendsAndCommunity />
     </Layout>
   )
 }
