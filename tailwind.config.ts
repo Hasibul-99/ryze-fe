@@ -18,8 +18,12 @@ export default {
   	},
   	extend: {
   		fontFamily: {
-  			proximanova: ['var(--font-proximanova)'],
-  			inter: ['var(--font-inter)']
+  			proximanova: [
+  				'var(--font-proximanova)'
+  			],
+  			inter: [
+  				'var(--font-inter)'
+  			]
   		},
   		keyframes: {
   			'accordion-down': {

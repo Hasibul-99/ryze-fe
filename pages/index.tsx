@@ -1,3 +1,4 @@
+import FAQ from '@/components/common/faq'
 import Entertainment from '@/components/home/entertainment'
 import FriendsAndCommunity from '@/components/home/friends-and-community'
 import Hero from '@/components/home/hero'
@@ -25,6 +26,7 @@ export default function Home() {
       <TelcoPack />
       <FriendsAndCommunity />
       <Privileges />
+      <FAQ />
     </Layout>
   )
 }

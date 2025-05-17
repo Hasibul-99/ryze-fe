@@ -3,77 +3,62 @@ import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import Image from 'next/image'
-import {useRef} from 'react'
 
 const CurvedSwiper = () => {
-  const sectionRef = useRef<HTMLElement>(null)
+  useGSAP(() => {
+    const timeLine = gsap.timeline()
 
-  // if (sectionRef?.current) {
-  useGSAP(
-    () => {
-      const timeLine = gsap.timeline()
-
-      timeLine
-        .set(['.cardwheel-body', '.cardwheel-header', '.cardwheel-items'], {
-          willChange: 'transform',
-        })
-        .to(
-          '.cardwheel-header',
-          {yPercent: -200, duration: 0.2, ease: 'none'},
-          0
-        )
-        .to(
-          '.cardwheel-body',
-          {
-            y: 0,
-            duration: 0.2,
-            ease: 'none',
-          },
-          0
-        )
-        .to(
-          '.cardwheel-items',
-          {
-            rotate: 0,
-            duration: 0.8,
-          },
-          0.2
-        )
-        .to(
-          '.cardwheel-body',
-          {
-            yPercent: 0,
-            duration: 0.3,
-            ease: 'none',
-          },
-          0.95
-        )
-        .add(() => {}, 1.25)
-        .set(['.cardwheel-body', '.cardwheel-header', '.cardwheel-items'], {
-          willChange: 'auto',
-        })
-
-      ScrollTrigger.create({
-        trigger: '.cardwheel',
-        animation: timeLine,
-        // markers: true,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 1,
-        invalidateOnRefresh: true,
-        pin: true,
-        pinSpacing: false,
+    timeLine
+      .set(['.cardwheel-body', '.cardwheel-header', '.cardwheel-items'], {
+        willChange: 'transform',
       })
-    },
-    {
-      scope: sectionRef,
-    }
-  )
-  // }
+      .to('.cardwheel-header', {yPercent: -200, duration: 0.2, ease: 'none'}, 0)
+      .to(
+        '.cardwheel-body',
+        {
+          y: 0,
+          duration: 0.2,
+          ease: 'none',
+        },
+        0
+      )
+      .to(
+        '.cardwheel-items',
+        {
+          rotate: 0,
+          duration: 0.8,
+        },
+        0.2
+      )
+      .to(
+        '.cardwheel-body',
+        {
+          yPercent: 0,
+          duration: 0.3,
+          ease: 'none',
+        },
+        0.95
+      )
+      .add(() => {}, 1.25)
+      .set(['.cardwheel-body', '.cardwheel-header', '.cardwheel-items'], {
+        willChange: 'auto',
+      })
+
+    ScrollTrigger.create({
+      trigger: '.cardwheel',
+      animation: timeLine,
+      // markers: true,
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+      invalidateOnRefresh: true,
+      pin: true,
+      pinSpacing: false,
+    })
+  })
 
   return (
     <section
-      ref={sectionRef}
       id='platforms'
       className='cardwheel mb-0 sm:mb-32'
       data-menu-inverse
