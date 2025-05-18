@@ -75,7 +75,7 @@ export default function FeaturesEntertainment() {
     >
       {/* --- mobile view --- */}
       <div
-        className={`relative flex size-full flex-col gap-10 bg-[url(/images/features/entertainment-bg.jpg)] bg-cover bg-center bg-no-repeat lg:hidden`}
+        className={`relative flex size-full flex-col gap-10 bg-[url(/images/feature/entertainment-bg.jpg)] bg-cover bg-center bg-no-repeat lg:hidden`}
       >
         <div
           className='absolute bottom-10 left-1/2 z-50 -translate-x-1/2 cursor-pointer rounded-full bg-[#DCD0E6] p-5 shadow-md'
@@ -128,7 +128,7 @@ export default function FeaturesEntertainment() {
       </div>
 
       {/* --- desktop view --- */}
-      <div className='hidden size-full justify-between gap-10 bg-[url(/images/features/entertainment-bg.jpg)] bg-cover bg-center bg-no-repeat lg:flex'>
+      <div className='hidden size-full justify-between gap-10 bg-[url(/images/feature/entertainment-bg.jpg)] bg-cover bg-center bg-no-repeat lg:flex'>
         <div className='relative flex flex-col justify-between gap-10 pl-10 pt-10'>
           <div className='min-h-[156px]'>
             <h2 className='max-w-[360px] text-[40px] font-semibold group-hover:text-3xl'>
