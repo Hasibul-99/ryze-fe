@@ -32,9 +32,17 @@ export default function HistoryBehind() {
       <div className='horizontal-sliders md:flex w-[500%] overflow-x-hidden'>
         <div className='slide w-full '>
           <ContentOne />
+        </div>
+        <div className='slide w-full '>
           <ContentTwo />
+        </div>
+        <div className='slide w-full '>
           <ContentThree />
+        </div>
+        <div className='slide w-full '>
           <ContentFour />
+        </div>
+        <div className='slide w-full '>
           <ContentFive />
         </div>
       </div>
