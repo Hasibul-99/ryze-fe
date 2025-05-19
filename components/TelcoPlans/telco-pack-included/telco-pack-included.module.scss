@@ -1,0 +1,15 @@
+.simGradient {
+  background: linear-gradient(
+    180deg,
+    rgba(148, 19, 241, 0.8) 0%,
+    rgba(86, 11, 139, 0.8) 100%
+  );
+}
+
+.simShadow {
+  box-shadow:
+    0px 8.45px 8.45px 0px #d6c8dd40 inset,
+    0px -8.45px 8.45px 0px #d6c8dd40 inset,
+    8.45px 0px 8.45px 0px #d6c8dd40 inset,
+    -8.45px 0px 8.45px 0px #d5c8dd40 inset;
+}
