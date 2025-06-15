@@ -1,4 +1,4 @@
-import ScrollDown from '@/components/common/scroll-down/scroll-down' //'~/components/common/scroll-down/scroll-down'
+import ScrollDown from '@/components/common/scroll-down/scroll-down'
 import Footer from '@/components/footer'
 import NavBar from '@/components/nav-bar'
 import {cn} from '@/lib/utils'
