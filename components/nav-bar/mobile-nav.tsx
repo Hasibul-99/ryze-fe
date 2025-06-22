@@ -105,7 +105,7 @@ export default function MobileNav({
             />
 
             <div className='absolute top-[140px] flex h-[calc(100%-150px)] w-full flex-col items-center gap-8 bg-black'>
-              <h2 className='text-2xl'>Join Ryze</h2>
+              <h2 className='text-2xl'>Join SkyLo</h2>
 
               <div className='mt-4 flex gap-4'>
                 <Link href={'/'} target='_blank'>

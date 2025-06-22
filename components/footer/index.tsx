@@ -72,7 +72,7 @@ export default function Footer() {
 
       <footer className='container mt-[120px] flex justify-center gap-16 text-xs md:text-base'>
         <Link href='/privacy-policy'>Terms & conditions | Privacy</Link>
-        <p>COPYRIGHT © RYZE 2024</p>
+        <p>COPYRIGHT © SkyLo 2025</p>
         <Link href='https://www.banglalink.net/' target='_blank'>
           Powered by Banglalink
         </Link>
