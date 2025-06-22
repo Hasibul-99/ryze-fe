@@ -10,7 +10,7 @@ export default function ContentFour() {
 
         <div className='px-5 text-center text-xl text-[#FFFFFF] md:text-3xl'>
           We believe telecommunications goes beyond data plans; it elevates
-          life’s finest experiences. Ryze brings this vision to life with
+          life’s finest experiences. SkyLo brings this vision to life with
           unlimited internet, boundless entertainment, and the tools needed to
           live, explore, and connect without boundaries.
         </div>

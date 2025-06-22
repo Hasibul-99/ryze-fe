@@ -45,7 +45,7 @@ export default function OttSummaryComponent() {
                 AI-Powered App
               </h3>
               <p className='text-lg sm:text-xl lg:text-2xl'>
-                Enhance your Ryze experience with the most intelligent app
+                Enhance your SkyLo experience with the most intelligent app
               </p>
             </div>
           </Fragment>

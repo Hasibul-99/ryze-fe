@@ -22,7 +22,7 @@ const FormSchema = z.object({
   phone: z
     .string()
     .min(10, {message: 'Phone number must be at least 10 digits.'}),
-  ryzeid: z.number().min(1, {message: 'Ryze ID must be a positive number.'}),
+  SkyLoid: z.number().min(1, {message: 'SkyLo ID must be a positive number.'}),
   inquiry: z
     .string()
     .min(10, {message: 'Inquiry must be at least 10 characters long.'}),
@@ -35,7 +35,7 @@ export default function EnquiryForm() {
       name: '',
       email: '',
       phone: '',
-      ryzeid: undefined,
+      SkyLoid: undefined,
     },
   })
 
@@ -132,14 +132,14 @@ export default function EnquiryForm() {
 
                 <FormField
                   control={form.control}
-                  name='ryzeid'
+                  name='SkyLoid'
                   render={({field}) => (
                     <FormItem>
-                      <FormLabel>Ryze ID</FormLabel>
+                      <FormLabel>SkyLo ID</FormLabel>
                       <FormControl>
                         <Input
                           type='number'
-                          placeholder='Your Ryze ID'
+                          placeholder='Your SkyLo ID'
                           {...field}
                           className='bg-[#18191A] border-[#18191A]'
                         />

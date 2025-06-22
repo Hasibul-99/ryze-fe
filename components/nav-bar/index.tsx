@@ -50,7 +50,7 @@ export default function NavBar() {
               src={'/images/white-logo.png'}
               width={100}
               height={20}
-              alt='Ryze logo'
+              alt='SkyLo logo'
             />
           </Link>
 
@@ -81,7 +81,7 @@ export default function NavBar() {
             <Link href={'/'} target='_blank'>
               <div className='btn primary-gradient btn-shadow flex h-11 cursor-pointer items-center gap-3 rounded-full p-4 md:h-[52px] md:p-6'>
                 <Image src={ArrowDownload} alt='download icon' />
-                <span className='join-ryze-text'>Join SkyLo</span>
+                <span className='join-SkyLo-text'>Join SkyLo</span>
               </div>
             </Link>
             <MobileNav links={links} />

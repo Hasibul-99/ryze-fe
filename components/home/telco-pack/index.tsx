@@ -27,7 +27,7 @@ export default function TelcoPack() {
         {/* --- heading --- */}
         <div className='max-w-[630px] text-center'>
           <h2 className='text-xl md:text-5xl'>
-            Enjoy the best 4G network and telco pack with Ryze
+            Enjoy the best 4G network and telco pack with SkyLo
           </h2>
           <p className='mt-6 text-lg text-[#D0D2D3] md:text-2xl'>
             Starting at just TK 299 per month
@@ -54,9 +54,9 @@ export default function TelcoPack() {
                     height={180}
                     quality={100}
                   />
-                  <div className='button-bg-gradient ryze-sim-shadow absolute right-[-30%] top-1/3 hidden size-[130px] translate-x-[-30%] items-center justify-center rounded-full opacity-95 md:flex'>
+                  <div className='button-bg-gradient SkyLo-sim-shadow absolute right-[-30%] top-1/3 hidden size-[130px] translate-x-[-30%] items-center justify-center rounded-full opacity-95 md:flex'>
                     <Image
-                      src={'/images/home/telco/ryze-sim.gif'}
+                      src={'/images/home/telco/SkyLo-sim.gif'}
                       alt='telco'
                       width={344}
                       height={432}

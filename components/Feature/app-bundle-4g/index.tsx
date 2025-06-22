@@ -60,7 +60,7 @@ export default function AppBundle4g() {
               </span>
               <span className='text-[28px] sm:text-[40px]'>Network</span>
             </div>
-            <div className='button-bg-gradient ryze-sim-shadow flex size-[80px] items-center justify-center rounded-full sm:size-[110px]'>
+            <div className='button-bg-gradient SkyLo-sim-shadow flex size-[80px] items-center justify-center rounded-full sm:size-[110px]'>
               <Image
                 className='size-1/2 sm:size-2/3'
                 src={

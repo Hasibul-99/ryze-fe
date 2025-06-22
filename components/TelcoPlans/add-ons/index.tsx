@@ -29,7 +29,7 @@ export default function AddOns() {
       <div className='container mt-[-150px] md:mt-[-200px]'>
         <h2 className='text-center text-xl sm:text-5xl'>Add-Ons OTT</h2>
         <p className='mx-auto mt-6 max-w-[530px] text-center text-base text-[#D0D2D3] sm:text-2xl'>
-          Need an OTT that’s not included in your Ryze telco pack? Buy them
+          Need an OTT that’s not included in your SkyLo telco pack? Buy them
           individually as add-ons OTT
         </p>
 

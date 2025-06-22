@@ -30,7 +30,7 @@ export default function FeatureCard({className}: Props) {
         />
         <CardTitle className='text-[28px] font-bold'>Membership card</CardTitle>
         <CardDescription className='text-base text-white'>
-          Free Ryze membership card made exclusively for Ryze customers.
+          Free SkyLo membership card made exclusively for SkyLo customers.
         </CardDescription>
       </CardHeader>
 

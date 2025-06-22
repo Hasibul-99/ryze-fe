@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className='container flex flex-col items-center justify-center text-white'>
-          <h2 className='text-3xl md:text-6xl'>{"Join Us"}</h2>
+          <h2 className='text-3xl md:text-6xl'>{'Join Us'}</h2>
 
           <div className='mt-4 flex gap-4'>
             <Link href={'/'} target='_blank'>
