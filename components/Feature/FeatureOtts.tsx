@@ -9,7 +9,7 @@ export default function FeatureOtts() {
         Over 100+ OTTs
       </h2>
       <p className='mx-auto mt-6 max-w-[490px] text-center text-base text-[#D0D2D3] sm:text-2xl'>
-        Ryze offers the best OTTs for you to choose from, there’s something for
+        SkyLo offers the best OTTs for you to choose from, there’s something for
         everyone!
       </p>
 

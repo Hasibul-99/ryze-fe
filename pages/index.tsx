@@ -38,4 +38,4 @@ export const getServerSideProps = (async () => {
       slug: 'home',
     },
   }
-}) satisfies GetServerSideProps<{homeData: any; slug: string}>
+}) satisfies GetServerSideProps<{homeData: null; slug: string}>

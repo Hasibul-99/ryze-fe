@@ -23,7 +23,7 @@ export default function FriendsAndCommunity() {
       <div className='relative mx-auto flex size-full h-[550px] max-w-3xl items-center justify-center overflow-hidden rounded-lg md:h-[750px] md:shadow-xl'>
         <div className='absolute left-0 top-8 z-20 flex w-full justify-center bg-black/50 text-center'>
           <p className='max-w-[333px] text-2xl leading-tight md:max-w-[632px] md:text-5xl'>
-            Enjoy it with your friends and the Ryze community
+            Enjoy it with your friends and the SkyLo community
           </p>
         </div>
 

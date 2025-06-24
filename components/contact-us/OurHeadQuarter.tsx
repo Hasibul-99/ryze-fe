@@ -14,7 +14,7 @@ export default function OurHeadQuarter() {
             height={80}
           />
           <h1 className='font-semibold text-2xl leading-[40px] text-center text-white'>
-            RYZE HQ
+            SkyLo HQ
           </h1>
         </div>
 
@@ -40,7 +40,7 @@ export default function OurHeadQuarter() {
             </div>
             <div className='col-span-2'>
               <p className='font-normal text-base leading-6 text-white'>
-                info@ryze.net
+                info@SkyLo.net
               </p>
             </div>
 

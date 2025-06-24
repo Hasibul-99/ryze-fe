@@ -35,8 +35,14 @@ export default function Language({className}: {className?: string}) {
           <SelectItem aria-label='English' value='en'>
             EN
           </SelectItem>
-          <SelectItem aria-label='Bangla' value='bn'>
-            BN
+          <SelectItem aria-label='Spanish' value='es'>
+            ES
+          </SelectItem>
+          <SelectItem aria-label='French' value='fr'>
+            FR
+          </SelectItem>
+          <SelectItem aria-label='German' value='de'>
+            DE
           </SelectItem>
         </SelectContent>
       </Select>

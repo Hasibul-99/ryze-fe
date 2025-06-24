@@ -173,7 +173,7 @@ body {
     #545454 95.42%
   );
 }
-.join-ryze {
+.join-SkyLo {
   background: #fc5c7d;
   background: -webkit-linear-gradient(to top, #6a82fb, #fc5c7d);
   background: linear-gradient(to top, #6a82fb, #fc5c7d);
@@ -230,22 +230,18 @@ body {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 .btn-shadow {
-  box-shadow:
-    0px 4px 4px 0px #d6c8dd40 inset,
-    4px 0px 4px 0px #d6c8dd40 inset,
+  box-shadow: 0px 4px 4px 0px #d6c8dd40 inset, 4px 0px 4px 0px #d6c8dd40 inset,
     -4px 0px 4px 0px #d5c8dd40 inset;
 }
-.ryze-sim-shadow {
-  box-shadow:
-    0px 11.52px 11.52px 0px #d6c8dd40 inset,
+.SkyLo-sim-shadow {
+  box-shadow: 0px 11.52px 11.52px 0px #d6c8dd40 inset,
     0px -11.52px 11.52px 0px #d6c8dd40 inset,
     11.52px 0px 11.52px 0px #d6c8dd40 inset,
     -11.52px 0px 11.52px 0px #d5c8dd40 inset,
     32.69px 32.69px 433.12px 0px #df439b;
 }
 .icon-box-shadow {
-  box-shadow:
-    -4px 0px 8px 0px rgba(54, 54, 54, 0.6) inset,
+  box-shadow: -4px 0px 8px 0px rgba(54, 54, 54, 0.6) inset,
     1px 0px 8px 0px rgba(54, 54, 54, 0.6) inset,
     0px 1px 8px 0px rgba(54, 54, 54, 0.6) inset,
     0px 4px 8px 0px rgba(54, 54, 54, 0.6) inset;
@@ -423,7 +419,7 @@ body {
   background: rgba(256, 256, 256, 0.3);
 }
 
-.join-ryze-text {
+.join-SkyLo-text {
   font-size: 12px;
   @media (min-width: 392px) {
     font-size: 16px;

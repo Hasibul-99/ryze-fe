@@ -11,10 +11,10 @@ export default function TelcoPackIncluded() {
             src='/images/telco-plans/logo.png'
             width={132}
             height={32}
-            alt='ryze logo'
+            alt='SkyLo logo'
           />
           <p className='mt-5 text-2xl font-bold md:mt-0'>
-            Included in every Ryze telco pack
+            Included in every SkyLo telco pack
           </p>
           <div className='w-[132px]' />
         </div>
@@ -43,7 +43,7 @@ export default function TelcoPackIncluded() {
                   <Image
                     src={getStorageUrl(item.image?.en ?? '')}
                     fill
-                    alt='ryze gif'
+                    alt='SkyLo gif'
                     quality={100}
                     className={cn(
                       idx === 0 && 'max-w-[90px] m-auto',
@@ -60,7 +60,7 @@ export default function TelcoPackIncluded() {
               'flex flex-col gap-12 justify-center p-6 bg-[#18191A] rounded-2xl w-full md:w-1/3 items-center'
             )}
           >
-            <span className='text-xl font-bold'>Ryze sim</span>
+            <span className='text-xl font-bold'>SkyLo sim</span>
             <div
               className={cn(
                 styles.simShadow,
@@ -69,7 +69,7 @@ export default function TelcoPackIncluded() {
               )}
             >
               <Image
-                src='/images/telco/ryze-sim.gif'
+                src='/images/telco/SkyLo-sim.gif'
                 fill
                 alt='chat bubble'
                 className='object-scale-down'
@@ -83,7 +83,7 @@ export default function TelcoPackIncluded() {
               'flex flex-col gap-12 justify-center p-6 bg-[#18191A] rounded-2xl w-full md:w-1/3 items-center'
             )}
           >
-            <span className='text-xl font-bold'>Ryze membership</span>
+            <span className='text-xl font-bold'>SkyLo membership</span>
             <div
               className={cn('rounded-full size-full min-h-[170px] relative')}
             >

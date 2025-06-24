@@ -21,7 +21,7 @@ export default function TelcoHero() {
       <div className='flex justify-center'>
         <Image
           src={'/images/telco/ryze-sim.gif'}
-          alt='Ryze SIM'
+          alt='SkyLo SIM'
           width={344}
           height={432}
           quality={100}

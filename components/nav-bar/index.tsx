@@ -1,5 +1,4 @@
 import ArrowDownload from '@/public/svgs/icons/arrow-down-to-line.svg'
-import RyzeSmallLogo from '@/public/svgs/ryze-small-logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import {cn} from '../../lib/utils'
@@ -47,7 +46,12 @@ export default function NavBar() {
       >
         <div className='flex w-full items-center justify-between lg:gap-[100px]'>
           <Link href='/'>
-            <Image src={RyzeSmallLogo} alt='Ryze logo' />
+            <Image
+              src={'/images/white-logo.png'}
+              width={100}
+              height={20}
+              alt='SkyLo logo'
+            />
           </Link>
 
           <NavigationMenu className='hidden lg:block'>
@@ -77,7 +81,7 @@ export default function NavBar() {
             <Link href={'/'} target='_blank'>
               <div className='btn primary-gradient btn-shadow flex h-11 cursor-pointer items-center gap-3 rounded-full p-4 md:h-[52px] md:p-6'>
                 <Image src={ArrowDownload} alt='download icon' />
-                <span className='join-ryze-text'>Join Ryze</span>
+                <span className='join-SkyLo-text'>Join SkyLo</span>
               </div>
             </Link>
             <MobileNav links={links} />

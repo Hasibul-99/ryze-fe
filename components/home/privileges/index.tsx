@@ -53,7 +53,7 @@ export default function Privileges({componentData}: any) {
           Exciting privileges waiting for you
         </h2>
         <p className='mt-4 w-2/3 text-center text-base md:mt-6 md:text-2xl'>
-          Exclusive lifestyle privileges curated for Ryze members only
+          Exclusive lifestyle privileges curated for SkyLo members only
         </p>
       </div>
       <div className='relative flex size-full flex-col items-center justify-center overflow-hidden rounded-lg'>

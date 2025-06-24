@@ -124,8 +124,8 @@ export default function Onboarding() {
                 />
               </div>
               <p className='text-[#D0D2D3]'>
-                Customize your Ryze home screen in anyway you like based on your
-                lifestyle and preferences.
+                Customize your SkyLo home screen in anyway you like based on
+                your lifestyle and preferences.
               </p>
               <ExploreMoreButton
                 label={'Explore more'}
@@ -169,7 +169,7 @@ export default function Onboarding() {
                   Fully customizable home screen
                 </h1>
                 <p className='text-2xl text-[#D0D2D3]'>
-                  Customize your Ryze home screen in anyway you like based on
+                  Customize your SkyLo home screen in anyway you like based on
                   your lifestyle and preferences
                 </p>
                 <ExploreMoreButton label={'Explore more'} link={'/'} />
@@ -184,7 +184,7 @@ export default function Onboarding() {
               {getProgress(progress)}
             </span>
             <div className='progressbar mr-[7px]'></div>
-            <div className='progressbar join-ryze progressbar-gradient mr-[6px]'></div>
+            <div className='progressbar join-SkyLo progressbar-gradient mr-[6px]'></div>
             <div className='progress-star'>
               <Image
                 src={'/images/star.png'}

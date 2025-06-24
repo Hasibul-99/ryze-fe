@@ -18,7 +18,7 @@ export default function Card({className, title, description, icons}: Props) {
     >
       <Image
         src='/images/feature/logo.webp'
-        alt='ryze log'
+        alt='SkyLo log'
         width={134}
         height={32}
       />

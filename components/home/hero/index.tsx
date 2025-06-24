@@ -92,7 +92,7 @@ export default function Hero() {
 
       <div className='container absolute left-1/2 top-[5%] z-10 flex -translate-x-1/2 flex-col items-center pt-[130px]'>
         <h1 className='hero-title--animation mb-[90px] max-w-full text-center text-2xl font-bold leading-8 sm:text-3xl md:max-w-[1000px] md:text-5xl md:leading-[1.15] lg:text-6xl lg:leading-[1.15]'>
-          <span className='text-[#9413F1]'>Ryze </span>
+          <span className='text-[#9413F1]'>SkyLo </span>
           is the best all-in-one digital lifestyle app in town
         </h1>
         {/* <div className='relative h-[450px] w-1/2 min-w-[230px] max-w-[300px] md:h-[550px] md:w-[300px] md:max-w-[300px]'> */}

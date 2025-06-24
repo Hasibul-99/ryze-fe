@@ -118,7 +118,7 @@ export default function ComparePacks() {
 
   return (
     <div className='container pt-[120px] text-center'>
-      <h2 className='text-xl sm:text-5xl'>Compare Ryze telco packs</h2>
+      <h2 className='text-xl sm:text-5xl'>Compare SkyLo telco packs</h2>
       <p className='mt-3 text-base sm:mt-6 sm:text-2xl'>
         Starting at only TK 377 per month
       </p>
@@ -278,8 +278,10 @@ export default function ComparePacks() {
                   </Button>
                   <ul className='list-disc pl-4 pt-4 text-start text-sm md:pl-6'>
                     <li>The listed prices are inclusive of VAT/TAX</li>
-                    <li>Find the updated product price & offers in RYZE app</li>
-                    <li>To experience RYZE full on, download RYZE app</li>
+                    <li>
+                      Find the updated product price & offers in SkyLo app
+                    </li>
+                    <li>To experience SkyLo full on, download SkyLo app</li>
                   </ul>
                 </div>
               </div>

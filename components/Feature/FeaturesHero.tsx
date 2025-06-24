@@ -16,7 +16,7 @@ export default function FeaturesHero() {
           <Image
             src={'/images/feature/feature-hero.webp'}
             className='hero-image--animation'
-            alt='Ryze SIM'
+            alt='SkyLo SIM'
             fill
             quality={100}
           />

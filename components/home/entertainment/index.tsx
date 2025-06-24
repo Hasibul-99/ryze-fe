@@ -219,7 +219,7 @@ export default function Entertainment() {
           Over 5 millions entertainment in your pocket
         </h2>
         <h3 className='w-2/3 text-center text-base text-[#D0D2D3] md:text-[24px]'>
-          Enjoy the best curated contents from over 100 OTT apps in Ryze
+          Enjoy the best curated contents from over 100 OTT apps in SkyLo
         </h3>
       </div>
 

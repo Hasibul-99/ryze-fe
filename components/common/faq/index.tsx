@@ -36,11 +36,11 @@ export default function FAQ() {
           {[1, 11, 1, 1].map((item: any, key: number) => (
             <AccordionItem key={key} value={key.toString()}>
               <AccordionTrigger className='my-4'>
-                Why should I download Ryze? MINUS
+                Why should I download SkyLo? MINUS
               </AccordionTrigger>
               <AccordionContent className='text-[#B0B3B5]'>
                 {parse(
-                  'Ryze is the best digital lifestyle superapp in the country with unlimited entertainment and the best 4G network in the country.'
+                  'SkyLo is the best digital lifestyle superapp in the country with unlimited entertainment and the best 4G network in the country.'
                 )}
               </AccordionContent>
             </AccordionItem>

@@ -14,7 +14,7 @@ export default function Booster() {
     <div className='container flex flex-col items-center py-[60px] sm:py-[120px]'>
       <h2 className='text-center text-xl font-bold sm:text-5xl'>Booster</h2>
       <p className='mx-auto mt-6 max-w-[500px] text-center text-base text-[#D0D2D3] sm:text-2xl'>
-        Running low on data or minute in your main Ryze package? Booster is the
+        Running low on data or minute in your main SkyLo package? Booster is the
         solution.
       </p>
 

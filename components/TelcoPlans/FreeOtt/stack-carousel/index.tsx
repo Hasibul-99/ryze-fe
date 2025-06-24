@@ -200,7 +200,7 @@ export default function StackCarousel() {
                           src='/svgs/ryze-small-logo.svg'
                           width={100}
                           height={25}
-                          alt='ryze logo'
+                          alt='SkyLo logo'
                         />
                         <div className='flex items-center gap-1 rounded-full border px-2 py-1'>
                           <Image
