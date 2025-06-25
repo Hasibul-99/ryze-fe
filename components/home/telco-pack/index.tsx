@@ -56,7 +56,7 @@ export default function TelcoPack() {
                   />
                   <div className='button-bg-gradient SkyLo-sim-shadow absolute right-[-30%] top-1/3 hidden size-[130px] translate-x-[-30%] items-center justify-center rounded-full opacity-95 md:flex'>
                     <Image
-                      src={'/images/home/telco/SkyLo-sim.gif'}
+                      src={'/images/home/telco/ryze-sim.gif'}
                       alt='telco'
                       width={344}
                       height={432}

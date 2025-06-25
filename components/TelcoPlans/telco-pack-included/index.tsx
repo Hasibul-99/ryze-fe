@@ -69,7 +69,7 @@ export default function TelcoPackIncluded() {
               )}
             >
               <Image
-                src='/images/telco/SkyLo-sim.gif'
+                src='/images/telco/ryze-sim.gif'
                 fill
                 alt='chat bubble'
                 className='object-scale-down'
