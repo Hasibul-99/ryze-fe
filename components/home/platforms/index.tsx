@@ -82,7 +82,7 @@ const CurvedSwiper = () => {
                         className={cn('rounded-2xl')}
                         fill
                         src={
-                          '/images/home/platforms/3oLKYPdhgDvBoENWEPOFheJR2WbA8GcebKQK0pmY.png'
+                          '/images/home/platforms/Flux_Dev_A_happy_young_Caucasian_woman_with_long_brunette_hair_1.jpg'
                         }
                         loading='lazy'
                         alt='card image'
@@ -99,7 +99,7 @@ const CurvedSwiper = () => {
                         className={cn('rounded-2xl')}
                         fill
                         src={
-                          '/images/home/platforms/KTJNVfxUdQdH6iZRNaHpL3rRVHskNlPigWDnQWWh.png'
+                          '/images/home/platforms/Flux_Dev_A_young_Caucasian_male_with_mediumlength_brown_hair_a_0.jpg'
                         }
                         loading='lazy'
                         alt='card image'
@@ -116,7 +116,7 @@ const CurvedSwiper = () => {
                         className={cn('rounded-2xl')}
                         fill
                         src={
-                          '/images/home/platforms/MOTDt27oN0ugXNaj7hvhDEUPJpmm4J9OQ68fOkXM.png'
+                          '/images/home/platforms/Flux_Dev_A_happy_young_Caucasian_woman_with_long_brunette_hair_0.jpg'
                         }
                         loading='lazy'
                         alt='card image'
@@ -133,7 +133,7 @@ const CurvedSwiper = () => {
                         className={cn('rounded-2xl')}
                         fill
                         src={
-                          '/images/home/platforms/xPr162bBkmzuydQI8dQU1jQyWLLtbuZ3MNKPfmD7.png'
+                          '/images/home/platforms/Flux_Dev_A_young_Caucasian_male_with_mediumlength_brown_hair_a_1.jpg'
                         }
                         loading='lazy'
                         alt='card image'
@@ -150,41 +150,7 @@ const CurvedSwiper = () => {
                         className={cn('rounded-2xl')}
                         fill
                         src={
-                          '/images/home/platforms/zzhy2Ym3hbxpMdGjZdHRYboL8peqV9UqxR2LM0pB.png'
-                        }
-                        loading='lazy'
-                        alt='card image'
-                        quality={100}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className='cardwheel-item black box'>
-                  <div className='cardwheel-item-body'>
-                    <div className='cardwheel-img'>
-                      <Image
-                        className={cn('rounded-2xl')}
-                        fill
-                        src={
-                          '/images/home/platforms/3oLKYPdhgDvBoENWEPOFheJR2WbA8GcebKQK0pmY.png'
-                        }
-                        loading='lazy'
-                        alt='card image'
-                        quality={100}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className='cardwheel-item black box'>
-                  <div className='cardwheel-item-body'>
-                    <div className='cardwheel-img'>
-                      <Image
-                        className={cn('rounded-2xl')}
-                        fill
-                        src={
-                          '/images/home/platforms/3oLKYPdhgDvBoENWEPOFheJR2WbA8GcebKQK0pmY.png'
+                          '/images/home/platforms/Flux_Dev_A_happy_young_Caucasian_woman_with_long_brunette_hair_2.jpg'
                         }
                         loading='lazy'
                         alt='card image'
