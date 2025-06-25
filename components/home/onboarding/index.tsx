@@ -12,6 +12,28 @@ import {Minus, Plus} from 'lucide-react'
 import Image from 'next/image'
 import {useState} from 'react'
 
+const constent = [
+  {
+    title: 'Smart layout, your style',
+    description:
+      'Let SkyLo adapt to your lifestyle with dynamic layouts and modular screen options.',
+    image: '/images/home/Onboading/mobile_app_design_0.jpg',
+  },
+  {
+    title: 'Your screen, your rules',
+    description:
+      'Design the SkyLo home screen to reflect your daily flow and aesthetic preferences.',
+    image: '/images/home/Onboading/mobile_app_design_1.jpg',
+  },
+
+  {
+    title: 'Tailored just for you',
+    description:
+      'Personalize every detail of your SkyLo experience to match your routine, habits, and unique taste.',
+    image: '/images/home/Onboading/mobile_app_design_2.jpg',
+  },
+]
+
 export default function Onboarding() {
   const [progress, setProgress] = useState(0)
   const [open, setOpen] = useState<{
@@ -97,14 +119,14 @@ export default function Onboarding() {
     <section id='onboarding' className='container items-center'>
       {/* show on mobile view */}
       <div className='mx-auto flex max-w-[400px] flex-col gap-12 text-start lg:hidden'>
-        {[1, 2, 1]?.map((item, index) => (
+        {constent.map((item, index) => (
           <Collapsible
             key={index}
             open={open[index.toString()]}
             onOpenChange={() => handleOnOpenChange(index.toString())}
           >
             <CollapsibleTrigger className='flex w-full cursor-pointer justify-between gap-5 text-xl font-semibold'>
-              <span className='text-start'>Fully customizable home screen</span>
+              <span className='text-start'>{item.title}</span>
               <div className='icon-box-shadow w-fit rounded-full p-2'>
                 {open[index.toString()] ? (
                   <Minus size={18} />
@@ -116,17 +138,14 @@ export default function Onboarding() {
             <CollapsibleContent>
               <div className='onboarding-image relative my-6 max-w-full'>
                 <Image
-                  src={'/images/home/home_mobile.png'}
+                  src={item.image}
                   alt='onboarding image'
                   fill
                   quality={100}
                   className='rounded-[50px]'
                 />
               </div>
-              <p className='text-[#D0D2D3]'>
-                Customize your SkyLo home screen in anyway you like based on
-                your lifestyle and preferences.
-              </p>
+              <p className='text-[#D0D2D3]'>{item.description}</p>
               <ExploreMoreButton
                 label={'Explore more'}
                 className='mx-auto mb-2 mt-8 py-5 pr-3'
@@ -144,7 +163,7 @@ export default function Onboarding() {
         className='container hidden h-[2500px] min-h-screen justify-between gap-[2.5%] lg:flex'
       >
         <div className='cards relative size-full'>
-          {[1, 2, 3].map((item, index) => (
+          {constent.map((item, index) => (
             <div
               className={cn(
                 'card flex gap-20 absolute w-full',
@@ -156,7 +175,7 @@ export default function Onboarding() {
               <div className='w-1/2'>
                 <div className='relative h-[580px] w-[450px]'>
                   <Image
-                    src={'/images/home/home_mobile.png'}
+                    src={item.image}
                     alt='onboarding image'
                     fill
                     quality={100}
@@ -165,13 +184,8 @@ export default function Onboarding() {
                 </div>
               </div>
               <div className='flex w-1/2 flex-col justify-center'>
-                <h1 className='text-[32px] font-semibold'>
-                  Fully customizable home screen
-                </h1>
-                <p className='text-2xl text-[#D0D2D3]'>
-                  Customize your SkyLo home screen in anyway you like based on
-                  your lifestyle and preferences
-                </p>
+                <h1 className='text-[32px] font-semibold'>{item.title}</h1>
+                <p className='text-2xl text-[#D0D2D3]'>{item.description}</p>
                 <ExploreMoreButton label={'Explore more'} link={'/'} />
               </div>
             </div>
