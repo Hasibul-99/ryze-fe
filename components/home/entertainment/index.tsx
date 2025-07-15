@@ -216,10 +216,11 @@ export default function Entertainment() {
     <section id='entertainment' className='relative py-[120px] text-center'>
       <div className='container flex flex-col items-center'>
         <h2 className='text-[20px] md:text-[48px]'>
-          Over 5 millions entertainment in your pocket
+          Unlimited Entertainment. One App.
         </h2>
         <h3 className='w-2/3 text-center text-base text-[#D0D2D3] md:text-[24px]'>
-          Enjoy the best curated contents from over 100 OTT apps in SkyLo
+          Stream top content from 100+ OTT platforms – all in one SkyLo
+          subscription.
         </h3>
       </div>
 
