@@ -1,4 +1,5 @@
 import ArrowDownload from '@/public/svgs/icons/arrow-down-to-line.svg'
+import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import {cn} from '../../lib/utils'
@@ -36,6 +37,8 @@ const links = [
 ]
 
 export default function NavBar() {
+  const {t} = useTranslation('common')
+
   return (
     <>
       <section
@@ -46,6 +49,7 @@ export default function NavBar() {
       >
         <div className='flex w-full items-center justify-between lg:gap-[100px]'>
           <Link href='/'>
+            {t('welcome')}
             <Image
               src={'/images/white-logo.png'}
               width={100}

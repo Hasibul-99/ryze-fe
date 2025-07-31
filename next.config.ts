@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   i18n: {
-    locales: ['en', 'es', 'de', 'fr'],
+    locales: ['en', 'es', 'de', 'fr', 'bn'],
     defaultLocale: 'en',
-    // localeDetection: false,
+    localeDetection: true,
   },
   images: {
     remotePatterns: [

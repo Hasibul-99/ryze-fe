@@ -12,6 +12,7 @@ import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import {GetServerSideProps} from 'next'
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -31,11 +32,12 @@ export default function Home() {
   )
 }
 
-export const getServerSideProps = (async () => {
+export const getServerSideProps = (async ({locale}) => {
   return {
     props: {
       homeData: null,
       slug: 'home',
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
     },
   }
 }) satisfies GetServerSideProps<{homeData: null; slug: string}>

@@ -12,7 +12,7 @@ export default function ContentOne() {
         <p className='text-base font-normal leading-6 md:text-[24px] md:leading-[32px]'>
           SkyLo was born from a simple truth: today’s generation lives with
           purpose, passion, and no limits. What if a telco pack could keep up
-          with that? The answer is SkyLo, powered by Banglalink. More than just
+          with that? The answer is SkyLo, powered by DailyLume. More than just
           data and calls, it’s designed for those who seize every moment and
           chase opportunities. People want to live boundlessly—not just staying
           connected but enjoying unlimited internet, entertainment, and endless

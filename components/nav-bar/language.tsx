@@ -1,4 +1,4 @@
-// import {useRouter as navigationRouter} from 'next/navigation'
+// components/common/Language.tsx
 import {useRouter} from 'next/router'
 import {cn} from '../../lib/utils'
 import {
@@ -9,41 +9,35 @@ import {
   SelectValue,
 } from '../ui/select'
 
+const locales = ['en', 'es', 'bn', 'fr', 'de']
+
 export default function Language({className}: {className?: string}) {
   const router = useRouter()
-  // const navRouter = navigationRouter()
+  const currentLocale = router.locale ?? 'en'
+  const {pathname, query, asPath} = router
 
   const handleLanguageChange = (value: string) => {
-    const {pathname, query, asPath} = router
-    router.push({pathname, query}, asPath, {locale: value})
+    if (!locales.includes(value)) return
 
-    /* --- if we don't want to change url with prefix --- */
-    // document.cookie = `NEXT_LOCALE=${value}; path=/; max-age=31536000`
-    // navRouter.refresh()
+    router.push({pathname, query}, asPath, {locale: value})
   }
 
   return (
-    <div className={cn(className && className)}>
-      <Select onValueChange={handleLanguageChange} value={router.locale}>
+    <div className={cn(className)}>
+      <Select onValueChange={handleLanguageChange} value={currentLocale}>
         <SelectTrigger
           aria-label='Choose Language Button'
           className='w-[70px] border-none bg-transparent focus:border-none'
         >
-          <SelectValue placeholder='EN' />
+          <SelectValue placeholder={currentLocale.toUpperCase()} />
         </SelectTrigger>
+
         <SelectContent className='bg-[#303233] text-white'>
-          <SelectItem aria-label='English' value='en'>
-            EN
-          </SelectItem>
-          <SelectItem aria-label='Spanish' value='es'>
-            ES
-          </SelectItem>
-          <SelectItem aria-label='French' value='fr'>
-            FR
-          </SelectItem>
-          <SelectItem aria-label='German' value='de'>
-            DE
-          </SelectItem>
+          {locales.map((lng) => (
+            <SelectItem key={lng} value={lng} aria-label={lng.toUpperCase()}>
+              {lng.toUpperCase()}
+            </SelectItem>
+          ))}
         </SelectContent>
       </Select>
     </div>
