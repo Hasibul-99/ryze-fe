@@ -1,6 +1,8 @@
+import useTranslation from '@/hooks/useTranslation'
 import ArrowDownload from '@/public/svgs/icons/arrow-down-to-line.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 import {cn} from '../../lib/utils'
 import {
   NavigationMenu,
@@ -36,6 +38,11 @@ const links = [
 ]
 
 export default function NavBar() {
+  const {locale} = useRouter()
+  const translation = useTranslation('home', locale)
+
+  console.log('translation', translation)
+
   return (
     <>
       <section
@@ -45,6 +52,7 @@ export default function NavBar() {
         )}
       >
         <div className='flex w-full items-center justify-between lg:gap-[100px]'>
+          {translation?.test}
           <Link href='/'>
             <Image
               src={'/images/white-logo.png'}
@@ -53,7 +61,6 @@ export default function NavBar() {
               alt='SkyLo logo'
             />
           </Link>
-
           <NavigationMenu className='hidden lg:block'>
             <NavigationMenuList className='gap-4'>
               {links.map((link) => (
@@ -75,7 +82,6 @@ export default function NavBar() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-
           <div className='flex items-center gap-2'>
             <Language />
             <Link href={'/'} target='_blank'>
