@@ -4,7 +4,7 @@ export default function AboutHero() {
   return (
     <section>
       <div
-        className={` bg-[url('/images/about-us/hero_bg.jpeg')] !bg-cover !bg-center !bg-no-repeat overflow-hidden pt-28`}
+        className={` bg-[url('/images/about-us/hero_bg.jpg')] !bg-cover !bg-center !bg-no-repeat overflow-hidden pt-28`}
         // style={{
         //   background: `url(${imageUrlMapper(
         //     translate(componentData.bg_image, locale)
@@ -19,7 +19,7 @@ export default function AboutHero() {
           </div>
 
           <div className='w-64 md:w-auto text-xl leading-8 font-normal md:text-[40px] md:leading-[48px] text-center text-[#FFFFFF]'>
-            The super app that started with a simple question and idea
+            What began as a simple thought became a powerful super app
           </div>
         </div>
 
