@@ -8,16 +8,16 @@ export default function ContentThree() {
           </span>
         </div>
 
-        <div className='text-center text-2xl font-semibold leading-8 text-[#FFFFFF] md:text-[32px] md:font-normal md:leading-[48px]'>
-          To empower a generation to live boundlessly on their terms through
-          limitless connectivity, AI powered app and unlimited internet and
-          entertainment.
+        <div className='text-center text-xl font-semibold leading-8 text-[#FFFFFF] md:text-[28px] md:font-normal md:leading-[48px]'>
+          To be recognized as a global leader in providing cutting-edge
+          broadband and streaming services, setting the standard for
+          connectivity innovation.
         </div>
       </div>
 
-      <div className='text-center md:h-[550px]'>
+      <div className='text-center md:h-[450px]'>
         <img
-          src={'/images/about-us/Image3.png'}
+          src={'/images/about-us/Image3.jpg'}
           alt='image3'
           className='mx-auto w-screen rounded-2xl object-cover md:w-10/12'
         />

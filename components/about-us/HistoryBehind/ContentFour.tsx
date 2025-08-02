@@ -1,7 +1,7 @@
 export default function ContentFour() {
   return (
     <div className='inline-block md:block'>
-      <div className='mb-10 flex w-screen flex-col items-center gap-6 pt-20 md:mx-auto md:mb-48 md:h-[184px] md:w-10/12 md:gap-8 md:pt-40 '>
+      <div className='mb-5 flex w-screen flex-col items-center gap-6 pt-20 md:mx-auto md:mb-48 md:h-[184px] md:w-10/12 md:gap-8 md:pt-40 '>
         <div className='rounded-full border border-[#FFFFFF] bg-[rgba(109,105,113,0.3)] px-12 py-6 backdrop-blur-[10px] md:px-6 md:py-3'>
           <span className='text-center text-lg font-normal leading-[24px] text-[#FFFFFF] md:text-[16px]'>
             OUR MISSION
@@ -9,10 +9,8 @@ export default function ContentFour() {
         </div>
 
         <div className='px-5 text-center text-xl text-[#FFFFFF] md:text-3xl'>
-          We believe telecommunications goes beyond data plans; it elevates
-          life’s finest experiences. SkyLo brings this vision to life with
-          unlimited internet, boundless entertainment, and the tools needed to
-          live, explore, and connect without boundaries.
+          Empowering everyone with reliable, affordable, and innovative digital
+          experiences rooted in privacy, sustainability, and community.
         </div>
       </div>
 
@@ -20,9 +18,9 @@ export default function ContentFour() {
         <div className='flex flex-col items-start gap-[28px] p-0 md:mx-auto '>
           <div>
             <img
-              src={'/images/about-us/b6cb828eed69c8f2283713899611088b.jpeg'}
+              src={'/images/about-us/blog-1.f679e713.jpg'}
               alt='img1'
-              // className='w-screen'
+              className='rounded-2xl'
             />
           </div>
           <div className='flex flex-col items-start justify-between gap-4 p-0 md:flex-row md:gap-[49px]'>
@@ -38,9 +36,9 @@ export default function ContentFour() {
         <div className='flex flex-col items-start gap-[28px] p-0 md:mx-auto '>
           <div>
             <img
-              src={'/images/about-us/b6cb828eed69c8f2283713899611088b.jpeg'}
+              src={'/images/about-us/blog-2.6d6d7fc2.jpg'}
               alt='img1'
-              // className='w-screen'
+              className='rounded-2xl'
             />
           </div>
           <div className='flex flex-col items-start justify-between gap-4 p-0 md:flex-row md:gap-[49px]'>
@@ -56,9 +54,9 @@ export default function ContentFour() {
         <div className='flex flex-col items-start gap-[28px] p-0 md:mx-auto '>
           <div>
             <img
-              src={'/images/about-us/b6cb828eed69c8f2283713899611088b.jpeg'}
+              src={'/images/about-us/blog-3.dd321114.jpg'}
               alt='img1'
-              // className='w-screen'
+              className='rounded-2xl'
             />
           </div>
           <div className='flex flex-col items-start justify-between gap-4 p-0 md:flex-row md:gap-[49px]'>
