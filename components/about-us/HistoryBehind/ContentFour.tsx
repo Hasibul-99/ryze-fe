@@ -15,7 +15,7 @@ export default function ContentFour() {
       </div>
 
       <div className='flex w-screen flex-col items-center justify-between gap-[40px] p-0 px-6  md:flex-row'>
-        <div className='flex flex-col items-start gap-[28px] p-0 md:mx-auto '>
+        {/* <div className='flex flex-col items-start gap-[28px] p-0 md:mx-auto '>
           <div>
             <img
               src={'/images/about-us/blog-1.f679e713.jpg'}
@@ -30,6 +30,32 @@ export default function ContentFour() {
             <p className='text-lg font-normal leading-7 text-white'>
               Elevate the people digital lifestyle and experiences
             </p>
+          </div>
+        </div> */}
+        <div className='group relative h-fill bg-gray-200 overflow-hidden'>
+          {/* <Image
+            src='/images/about-us/blog-1.f679e713.jpg'
+            alt='img1'
+            layout='fill'
+            objectFit='cover'
+            className='object-cover rounded-2xl'
+          /> */}
+          <img
+            src={'/images/about-us/blog-1.f679e713.jpg'}
+            alt='img1'
+            className='rounded-2xl'
+          />
+
+          <div
+            className='absolute inset-0 opacity-0 group-hover:opacity-100 translate-all duration-300 ease-out transform translate-y-full group-hover:translate-y-0'
+            style={{
+              background:
+                'linear-gradient(180deg, #212121 50%, rgba(33,33,33,0.8) 100%);',
+            }}
+          >
+            <div className='absolute top-24 left-0 p-4 lg:p-6 bg-white '>
+              <p>hello</p>
+            </div>
           </div>
         </div>
 
