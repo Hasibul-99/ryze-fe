@@ -23,8 +23,8 @@ const links = [
     link: '/features',
   },
   {
-    title: 'Telco plans',
-    link: '/telco-plans',
+    title: 'Pricing plans',
+    link: '/pricing-plans',
   },
   {
     title: 'About us',

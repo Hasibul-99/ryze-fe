@@ -53,13 +53,16 @@ export default function EnquiryForm() {
   }
 
   return (
-    <div className="bg-[url('/images/contact-us/image2.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden my-20">
+    <div
+      id='contact-us-form'
+      className="bg-[url('/images/contact-us/image2.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden my-20"
+    >
       <div className='flex flex-col md:flex-row justify-center items-start p-6 md:p-12 gap-10 md:gap-20 bg-black w-9/12 mx-auto my-16 md:my-32'>
         <div className='md:w-6/12 flex flex-row md:flex-col justify-center items-start p-0 gap-6'>
           <img
-            src='/images/icons/copy-front.svg'
+            src='/images/contact-us/customer-service.png'
             alt='copy-front'
-            className='w-10 md:w-auto order-2 md:order-1'
+            className='w-10 md:w-28 order-2 md:order-1'
           />
           <div className='order-1 md:order-2'>
             <h1 className='font-semibold text-xl leading-8 md:text-4xl md:leading-12 text-white mb-2'>

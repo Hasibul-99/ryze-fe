@@ -12,7 +12,7 @@ export default function ContentOne() {
         <p className='text-base font-normal leading-6 md:text-[24px] md:leading-[32px]'>
           SkyLo began with a belief: the future belongs to those who live
           without hesitation. In a world that moves fast, we asked—what if your
-          telco experience moved even faster? SkyLo isn’t just about staying
+          experience moved even faster? SkyLo isn’t just about staying
           connected; it’s about empowering bold lifestyles. Whether it’s
           streaming, gaming, or creating, SkyLo is built for limitless ambition.
           Because today’s generation doesn’t just go online — they take off.

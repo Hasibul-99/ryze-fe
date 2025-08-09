@@ -2,7 +2,10 @@ import Link from 'next/link'
 
 export default function OurHeadQuarter() {
   return (
-    <div className="bg-[url('/images/contact-us/image1.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden my-20">
+    <div
+      id='location'
+      className="bg-[url('/images/contact-us/image1.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden my-20"
+    >
       <div className='mx-auto md:w-[516px] flex flex-col justify-center items-center p-16 gap-10 bg-black border border-[#303233]'>
         {/* <img src={'/images/contact-us/image1.jpeg'} alt='Image' /> */}
 
@@ -27,8 +30,8 @@ export default function OurHeadQuarter() {
             </div>
             <div className='col-span-2'>
               <p className='font-normal text-base leading-6 text-white'>
-                House 4, Tiger's Den, SW Bir Uttam Mir Shawkat Sarak, Dhaka
-                1212, Bangladesh
+                Streamit Headquarters123 Streaming Lane, Suite 100Media City, CA
+                90210, USA
               </p>
             </div>
             <div className='col-span-3 w-full border border-[#969A9C]'></div>
@@ -53,7 +56,7 @@ export default function OurHeadQuarter() {
             </div>
             <div className='col-span-2'>
               <p className='font-normal text-base leading-6 text-white'>
-                +88 01911304121
+                +(480) 555-0103
               </p>
             </div>
 

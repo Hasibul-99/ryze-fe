@@ -1,28 +1,33 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HeroItem = ({
   imgSrc,
   alt,
   title,
+  id,
 }: {
   imgSrc: string
   alt: string
   title: string
+  id: string
 }) => {
   return (
-    <div className='flex w-full flex-row items-center gap-[24px] rounded-[16px] bg-[rgba(143,143,143,0.5)] p-6 backdrop-blur-[0.5px] md:min-w-72 md:flex-col md:justify-center md:py-14'>
-      <Image
-        src={imgSrc}
-        alt={alt}
-        className='size-10 md:size-[100px]'
-        width={100}
-        height={100}
-        quality={100}
-      />
-      <p className='text-center text-base font-semibold leading-6 text-white md:text-[28px] md:leading-[36px]'>
-        {title}
-      </p>
-    </div>
+    <Link href={'#' + id}>
+      <div className='flex w-full flex-row items-center gap-[24px] cursor-pointer rounded-[16px] bg-[rgba(143,143,143,0.5)] p-6 backdrop-blur-[0.5px] md:min-w-72 md:flex-col md:justify-center md:py-14'>
+        <Image
+          src={imgSrc}
+          alt={alt}
+          className='size-10 md:size-[100px]'
+          width={100}
+          height={100}
+          quality={100}
+        />
+        <p className='text-center text-base font-semibold leading-6 text-white md:text-[28px] md:leading-[36px]'>
+          {title}
+        </p>
+      </div>
+    </Link>
   )
 }
 
@@ -47,18 +52,21 @@ export default function ConTactUsHero() {
             imgSrc={'/images/contact-us/map-pin.png'}
             alt='map-pin'
             title={'Our headquarter'}
+            id='location'
           />
 
           <HeroItem
             imgSrc={'/images/contact-us/faq-icon.png'}
             alt='copy-front'
             title={'FAQ'}
+            id='faq'
           />
 
           <HeroItem
-            imgSrc={'/images/icons/copy-front.svg'}
+            imgSrc={'/images/contact-us/customer-service.png'}
             alt='chat-bubble'
             title={'Contact Us'}
+            id='contact-us-form'
           />
         </div>
       </div>
