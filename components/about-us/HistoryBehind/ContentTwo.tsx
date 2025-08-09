@@ -4,7 +4,7 @@ export default function ContentTwo() {
       <div>
         <img
           src={'/images/about-us/Image2.jpg'}
-          className='w-screen md:w-[700px] h-60 md:h-screen'
+          className='w-screen md:w-auto h-60 md:h-screen'
           alt='image2'
         />
       </div>
@@ -13,36 +13,48 @@ export default function ContentTwo() {
         <div className='flex flex-col items-center md:items-end p-0 gap-[30px] md:gap-[80px]'>
           <div className='flex flex-col items-center md:items-end p-0 gap-[8px]'>
             <h1 className='font-normal text-[32px] leading-10 md:text-[40px] md:leading-[56px] text-white'>
-              One App
+              100K
+              <span className='text-pink-600 font-montserrat text-[30px] font-semibold align-super relative -top-2 left-0'>
+                +
+              </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Everything You Need in One Place
+              Active User
             </p>
           </div>
           <div className='flex flex-col items-center md:items-end p-0 gap-[8px]'>
             <h1 className='font-normal text-[32px] leading-10 md:text-[40px] md:leading-[56px] text-white'>
-              All Your Shows
+              400K
+              <span className='text-pink-600 font-montserrat text-[30px] font-semibold align-super relative -top-2 left-0'>
+                +
+              </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              One Subscription. All Platforms.
+              Apps Download
             </p>
           </div>
         </div>
         <div className='flex flex-col items-center md:items-end p-0 gap-[30px] md:gap-[80px]'>
           <div className='flex flex-col items-center md:items-end p-0 gap-[8px]'>
             <h1 className='font-normal text-[32px] leading-10 md:text-[40px] md:leading-[56px] text-white'>
-              Total Access
+              90
+              <span className='text-pink-600 font-montserrat text-[30px] font-semibold align-super relative -top-2 left-0'>
+                %
+              </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Work, Play & Stream – No Limits
+              Satisfied User
             </p>
           </div>
           <div className='flex flex-col items-center md:items-end p-0 gap-[8px]'>
             <h1 className='font-normal text-[32px] leading-10 md:text-[40px] md:leading-[56px] text-white'>
-              Connected & Smart
+              200
+              <span className='text-pink-600 font-montserrat text-[30px] font-semibold align-super relative -top-2 left-0'>
+                +
+              </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Internet, AI Tools & OTTs
+              Partner Joined
             </p>
           </div>
         </div>
