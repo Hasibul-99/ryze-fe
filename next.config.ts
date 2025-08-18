@@ -1,13 +1,15 @@
 import type {NextConfig} from 'next'
+const {i18n} = require('./next-i18next.config')
 
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  i18n: {
-    locales: ['en', 'es', 'de', 'fr', 'bn'],
-    defaultLocale: 'en',
-    localeDetection: true,
-  },
+  i18n: i18n,
+  // {
+  //   locales: ['en', 'es', 'de', 'fr', 'bn'],
+  //   defaultLocale: 'en',
+  //   localeDetection: true,
+  // },
   images: {
     remotePatterns: [
       {
