@@ -2,6 +2,7 @@ import {Card, CardContent, CardHeader} from '@/components/ui/card'
 import Marquee from '@/components/ui/marquee'
 import {cn} from '@/lib/utils'
 import Image from 'next/image'
+import {useTranslation} from 'next-i18next'
 import {useRouter} from 'next/router'
 import ExploreMoreButton from '../../ui/explore-more-button'
 
@@ -32,14 +33,15 @@ const ReviewCard = ({
   )
 }
 
-export default function Privileges({componentData}: any) {
-  const {locale} = useRouter() as {locale: keyof EnBn}
-  const header = componentData?.at(0)
+interface PrivilegesProps {
+  componentData?: any[]
+}
+
+export default function Privileges({componentData}: PrivilegesProps) {
+  const {t} = useTranslation('common')
   const constents = componentData?.length
     ? componentData.slice(1, componentData.length)
     : []
-  const firstRow = constents.slice(0, constents.length / 2)
-  const secondRow = constents.slice(constents.length / 2)
 
   return (
     <section
@@ -50,10 +52,10 @@ export default function Privileges({componentData}: any) {
     >
       <div className='mb-[48px] flex flex-col items-center md:mb-[104px]'>
         <h2 className='text-xl md:text-5xl'>
-          Exciting privileges waiting for you
+          {t('privileges.title')}
         </h2>
         <p className='mt-4 w-2/3 text-center text-base md:mt-6 md:text-2xl'>
-          Exclusive lifestyle privileges curated for SkyLo members only
+          {t('privileges.description')}
         </p>
       </div>
       <div className='relative flex size-full flex-col items-center justify-center overflow-hidden rounded-lg'>
@@ -81,7 +83,7 @@ export default function Privileges({componentData}: any) {
 
       <ExploreMoreButton
         className='mx-auto'
-        label={'Explore more'}
+        label={t('privileges.explore_more')}
         link={'/'}
       />
     </section>

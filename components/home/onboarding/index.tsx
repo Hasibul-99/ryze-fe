@@ -9,32 +9,12 @@ import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import {Minus, Plus} from 'lucide-react'
+import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 import {useState} from 'react'
 
-const constent = [
-  {
-    title: 'Smart layout, your style',
-    description:
-      'Let SkyLo adapt to your lifestyle with dynamic layouts and modular screen options.',
-    image: '/images/home/Onboading/mobile_app_design_0.jpg',
-  },
-  {
-    title: 'Your screen, your rules',
-    description:
-      'Design the SkyLo home screen to reflect your daily flow and aesthetic preferences.',
-    image: '/images/home/Onboading/mobile_app_design_1.jpg',
-  },
-
-  {
-    title: 'Tailored just for you',
-    description:
-      'Personalize every detail of your SkyLo experience to match your routine, habits, and unique taste.',
-    image: '/images/home/Onboading/mobile_app_design_2.jpg',
-  },
-]
-
 export default function Onboarding() {
+  const {t} = useTranslation('common')
   const [progress, setProgress] = useState(0)
   const [open, setOpen] = useState<{
     [key: string]: boolean
@@ -43,6 +23,24 @@ export default function Onboarding() {
     1: false,
     2: false,
   })
+
+  const constent = [
+    {
+      title: t('onboarding.smart_layout.title'),
+      description: t('onboarding.smart_layout.description'),
+      image: '/images/home/Onboading/mobile_app_design_0.jpg',
+    },
+    {
+      title: t('onboarding.your_screen.title'),
+      description: t('onboarding.your_screen.description'),
+      image: '/images/home/Onboading/mobile_app_design_1.jpg',
+    },
+    {
+      title: t('onboarding.tailored.title'),
+      description: t('onboarding.tailored.description'),
+      image: '/images/home/Onboading/mobile_app_design_2.jpg',
+    },
+  ]
 
   const handleOnOpenChange = (key: string) => {
     setOpen({...open, [key]: !open[key]})

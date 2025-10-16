@@ -43,7 +43,7 @@ export default function OurHeadQuarter() {
             </div>
             <div className='col-span-2'>
               <p className='font-normal text-base leading-6 text-white'>
-                info@SkyLo.net
+                info@skylo.net
               </p>
             </div>
 

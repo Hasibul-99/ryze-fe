@@ -3,12 +3,14 @@ import Particles from '@/components/ui/particles'
 import {cn} from '@/lib/utils'
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
+import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 import {useRef} from 'react'
 // import GlobeFront from 'svgs/globe-shape-front.svg'
 import Features from './features'
 
 export default function Hero() {
+  const {t} = useTranslation('common')
   const sectionRef = useRef<HTMLElement>(null)
 
   useGSAP(
@@ -92,8 +94,7 @@ export default function Hero() {
 
       <div className='container absolute left-1/2 top-[5%] z-10 flex -translate-x-1/2 flex-col items-center pt-[130px]'>
         <h1 className='hero-title--animation mb-[90px] max-w-full text-center text-2xl font-bold leading-8 sm:text-3xl md:max-w-[1000px] md:text-5xl md:leading-[1.15] lg:text-6xl lg:leading-[1.15]'>
-          <span className='text-[#9413F1]'>SkyLo </span>
-          is the best all-in-one digital lifestyle app in town
+          {t('hero.title')}
         </h1>
         {/* <div className='relative h-[450px] w-1/2 min-w-[230px] max-w-[300px] md:h-[550px] md:w-[300px] md:max-w-[300px]'> */}
         <div className='relative h-[580px] w-[285px] md:h-[650px] md:w-[320px]'>

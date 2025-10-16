@@ -1,4 +1,92 @@
 {
-  "welcome": "Welcome!",
-  "change_language": "Change Language"
+  "welcome": "Welcome to SkyLo",
+  "change_language": "Change Language",
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "join_skylo": "Join SkyLo"
+  },
+  "hero": {
+    "title": "SkyLo is the best all-in-one digital lifestyle app in town",
+    "subtitle": "Your gateway to unlimited entertainment and connectivity"
+  },
+  "entertainment": {
+    "title": "Unlimited Entertainment. One App.",
+    "stream_content": "Stream top content from 100+ OTT platforms – all in one SkyLo subscription."
+  },
+  "onboarding": {
+    "smart_layout": {
+      "title": "Smart layout, your style",
+      "description": "Let SkyLo adapt to your lifestyle with dynamic layouts and modular screen options."
+    },
+    "your_screen": {
+      "title": "Your screen, your rules",
+      "description": "Design the SkyLo home screen to reflect your daily flow and aesthetic preferences."
+    },
+    "tailored": {
+      "title": "Tailored just for you",
+      "description": "Personalize every detail of your SkyLo experience to match your routine, habits, and unique taste."
+    }
+  },
+  "privileges": {
+    "title": "Exciting privileges waiting for you",
+    "description": "Exclusive lifestyle privileges curated for SkyLo members only",
+    "explore_more": "Explore more"
+  },
+  "telco": {
+    "title": "Enjoy the best 4G network and telco pack with SkyLo",
+    "compare_packs": "Compare SkyLo telco packs",
+    "get_started": "Get started",
+    "included_title": "Included in every SkyLo telco pack",
+    "skylo_sim": "SkyLo sim",
+    "skylo_membership": "SkyLo membership",
+    "booster_title": "Running low on data or minute in your main SkyLo package? Booster is the solution for you.",
+    "add_ons_title": "Need an OTT that's not included in your SkyLo telco pack? Buy them separately as add-ons.",
+    "enhance_experience": "Enhance your SkyLo experience with the most intelligent app"
+  },
+  "features": {
+    "otts_description": "SkyLo offers the best OTTs for you to choose from, there's something for everyone.",
+    "gamification": "Gamification & Privileges",
+    "app_bundle": "App Bundle & 4G",
+    "entertainment": "Entertainment"
+  },
+  "about": {
+    "hero_title": "About SkyLo",
+    "history_title": "Enjoy sports, movies, TV shows & more with SkyLo",
+    "history_description": "SkyLo began with a belief: the future belongs to those who live digitally. But what if the digital experience moved even faster? SkyLo isn't just about staying connected—it's about living ahead. Whether you're streaming, gaming, or creating, SkyLo is built for limitless ambition.",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "values": "Our Values"
+  },
+  "contact": {
+    "hero_title": "Contact Us",
+    "get_in_touch": "Get in touch",
+    "hq_title": "SkyLo HQ",
+    "email": "info@skylo.net",
+    "phone": "+880 1234 567890",
+    "address": "123 Digital Street, Tech City, Bangladesh",
+    "form": {
+      "skylo_id_placeholder": "Your SkyLo ID",
+      "message_placeholder": "Your message",
+      "skylo_id_label": "SkyLo ID"
+    }
+  },
+  "community": {
+    "title": "Join the fun with your friends and thousands of SkyLo users",
+    "membership_description": "Free SkyLo membership card made exclusively for SkyLo customers."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "why_download": "Why should I download SkyLo?",
+    "why_download_answer": "SkyLo is the best digital lifestyle superapp in the country with unlimited entertainment and the best 4G network in the country."
+  },
+  "footer": {
+    "join_us": "Join Us",
+    "terms_privacy": "Terms & conditions | Privacy",
+    "copyright": "COPYRIGHT © SkyLo 2025",
+    "powered_by": "Powered by DailyLume"
+  }
 }

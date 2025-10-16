@@ -1,8 +1,8 @@
 import ArrowDownload from '@/public/svgs/icons/arrow-down-to-line.svg'
-import {useTranslation} from 'next-i18next'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
-import {cn} from '../../lib/utils'
+import { cn } from '../../lib/utils'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -13,31 +13,31 @@ import {
 import Language from './language'
 import MobileNav from './mobile-nav'
 
-const links = [
-  {
-    title: 'Home',
-    link: '/',
-  },
-  {
-    title: 'Features',
-    link: '/features',
-  },
-  {
-    title: 'Pricing plans',
-    link: '/pricing-plans',
-  },
-  {
-    title: 'About us',
-    link: '/about-us',
-  },
-  {
-    title: 'Contact us',
-    link: '/contact-us',
-  },
-]
-
 export default function NavBar() {
   const {t} = useTranslation('common')
+
+  const links = [
+    {
+      title: t('nav.home'),
+      link: '/',
+    },
+    {
+      title: t('nav.features'),
+      link: '/features',
+    },
+    {
+      title: t('nav.pricing'),
+      link: '/pricing-plans',
+    },
+    {
+      title: t('nav.about'),
+      link: '/about-us',
+    },
+    {
+      title: t('nav.contact'),
+      link: '/contact-us',
+    },
+  ]
 
   return (
     <>
@@ -49,12 +49,11 @@ export default function NavBar() {
       >
         <div className='flex w-full items-center justify-between lg:gap-[100px]'>
           <Link href='/'>
-            {t('welcome')}
             <Image
               src={'/images/white-logo.png'}
               width={100}
               height={20}
-              alt='SkyLo logo'
+              alt='SkyLo Logo'
             />
           </Link>
 
@@ -85,7 +84,7 @@ export default function NavBar() {
             <Link href={'/'} target='_blank'>
               <div className='btn primary-gradient btn-shadow flex h-11 cursor-pointer items-center gap-3 rounded-full p-4 md:h-[52px] md:p-6'>
                 <Image src={ArrowDownload} alt='download icon' />
-                <span className='join-SkyLo-text'>Join SkyLo</span>
+                <span className='join-SkyLo-text'>{t('nav.join_skylo')}</span>
               </div>
             </Link>
             <MobileNav links={links} />

@@ -280,8 +280,8 @@ export default function ComparePacks() {
                     <li>The listed prices are inclusive of VAT/TAX</li>
                     <li>
                       Find the updated product price & offers in SkyLo app
-                    </li>
-                    <li>To experience SkyLo full on, download SkyLo app</li>
+          </li>
+          <li>To experience SkyLo full on, download SkyLo app</li>
                   </ul>
                 </div>
               </div>

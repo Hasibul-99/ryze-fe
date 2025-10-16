@@ -1,6 +1,7 @@
 import ExploreMoreButton from '@/components/ui/explore-more-button'
 import Marquee from '@/components/ui/marquee'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
+import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 import ListenCard from './listen-card'
 import MovieCard from './movie-card'
@@ -212,15 +213,16 @@ const playFirstRow = playList.slice(0, playList.length / 2)
 const playSecondRow = playList.slice(playList.length / 2)
 
 export default function Entertainment() {
+  const {t} = useTranslation('common')
+  
   return (
     <section id='entertainment' className='relative py-[120px] text-center'>
       <div className='container flex flex-col items-center'>
         <h2 className='text-[20px] md:text-[48px]'>
-          Unlimited Entertainment. One App.
+          {t('entertainment.title')}
         </h2>
         <h3 className='w-2/3 text-center text-base text-[#D0D2D3] md:text-[24px]'>
-          Stream top content from 100+ OTT platforms – all in one SkyLo
-          subscription.
+          {t('entertainment.stream_content')}
         </h3>
       </div>
 

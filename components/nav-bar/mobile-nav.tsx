@@ -16,7 +16,7 @@ import {
 import {cn} from '@/lib/utils'
 import GlobeBack from '@/public/svgs/globe-shape-back.svg'
 import GlobeFront from '@/public/svgs/globe-shape-front.svg'
-import * as animationData from '@/public/svgs/ryze-lottie.json'
+import * as animationData from '@/public/svgs/skylo-lottie.json'
 import {Menu, X} from 'lucide-react'
 // import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -29,14 +29,6 @@ export default function MobileNav({
 }: {
   links: {title: string; link: string}[]
 }) {
-  const defaultOptions = {
-    loop: true,
-    autoPlay: true,
-    animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  }
 
   return (
     <Drawer direction='top'>

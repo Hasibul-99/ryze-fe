@@ -27,7 +27,7 @@ export default function SelectCustom({
     <Fragment>
       <Select value={value} onValueChange={(val) => setSelectedTab(val)}>
         <SelectTrigger className='w-full border-0 border-inherit focus:border-inherit focus:border-0 focus:ring-offset-0 bg-[#18191A] shadow-[inset_0px_4px_4px_rgba(255,255,255,0.05)] rounded-full py-6 px-5 select-custom'>
-          <SelectValue placeholder='Select a Item' />
+          <SelectValue placeholder='Select an option' />
         </SelectTrigger>
         <SelectContent className='bg-[#18191A] text-white'>
           {options?.length ? (

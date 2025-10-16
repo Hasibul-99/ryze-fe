@@ -197,10 +197,10 @@ export default function StackCarousel() {
                         <Image
                           // className='h-4 w-16 sm:h-[27.78px] sm:w-[101.85px]'
                           className='h-4 w-16'
-                          src='/svgs/ryze-small-logo.svg'
+                          src='/svgs/skylo-small-logo.svg'
                           width={100}
                           height={25}
-                          alt='SkyLo logo'
+                          alt='SkyLo Logo'
                         />
                         <div className='flex items-center gap-1 rounded-full border px-2 py-1'>
                           <Image

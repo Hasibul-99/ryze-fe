@@ -1,0 +1,92 @@
+{
+  "welcome": "Willkommen bei SkyLo",
+  "change_language": "Sprache ändern",
+  "nav": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "join_skylo": "SkyLo beitreten"
+  },
+  "hero": {
+    "title": "SkyLo ist die beste All-in-One-Digital-Lifestyle-App der Stadt",
+    "subtitle": "Ihr Tor zu unbegrenzter Unterhaltung und Konnektivität"
+  },
+  "entertainment": {
+    "title": "Unbegrenzte Unterhaltung. Eine App.",
+    "stream_content": "Streamen Sie Top-Inhalte von über 100 OTT-Plattformen – alles in einem SkyLo-Abonnement."
+  },
+  "onboarding": {
+    "smart_layout": {
+      "title": "Intelligentes Layout, Ihr Stil",
+      "description": "Lassen Sie SkyLo sich an Ihren Lebensstil anpassen mit dynamischen Layouts und modularen Bildschirmoptionen."
+    },
+    "your_screen": {
+      "title": "Ihr Bildschirm, Ihre Regeln",
+      "description": "Gestalten Sie den SkyLo-Startbildschirm so, dass er Ihren täglichen Ablauf und ästhetischen Vorlieben entspricht."
+    },
+    "tailored": {
+      "title": "Maßgeschneidert nur für Sie",
+      "description": "Personalisieren Sie jedes Detail Ihrer SkyLo-Erfahrung, um Ihrer Routine, Ihren Gewohnheiten und Ihrem einzigartigen Geschmack zu entsprechen."
+    }
+  },
+  "privileges": {
+    "title": "Aufregende Privilegien warten auf Sie",
+    "description": "Exklusive Lifestyle-Privilegien, die nur für SkyLo-Mitglieder kuratiert wurden",
+    "explore_more": "Mehr erkunden"
+  },
+  "telco": {
+    "title": "Genießen Sie das beste 4G-Netzwerk und Telco-Paket mit SkyLo",
+    "compare_packs": "SkyLo Telco-Pakete vergleichen",
+    "get_started": "Loslegen",
+    "included_title": "In jedem SkyLo Telco-Paket enthalten",
+    "skylo_sim": "SkyLo SIM",
+    "skylo_membership": "SkyLo Mitgliedschaft",
+    "booster_title": "Gehen Ihnen die Daten oder Minuten in Ihrem Haupt-SkyLo-Paket aus? Booster ist die Lösung für Sie.",
+    "add_ons_title": "Benötigen Sie ein OTT, das nicht in Ihrem SkyLo Telco-Paket enthalten ist? Kaufen Sie sie separat als Add-ons.",
+    "enhance_experience": "Verbessern Sie Ihre SkyLo-Erfahrung mit der intelligentesten App"
+  },
+  "features": {
+    "otts_description": "SkyLo bietet die besten OTTs zur Auswahl, für jeden ist etwas dabei.",
+    "gamification": "Gamification und Privilegien",
+    "app_bundle": "App-Bundle und 4G",
+    "entertainment": "Unterhaltung"
+  },
+  "about": {
+    "hero_title": "Über SkyLo",
+    "history_title": "Genießen Sie Sport, Filme, TV-Shows und mehr mit SkyLo",
+    "history_description": "SkyLo begann mit einer Überzeugung: Die Zukunft gehört denen, die digital leben. Aber was wäre, wenn die digitale Erfahrung noch schneller voranschreiten würde? SkyLo geht nicht nur darum, verbunden zu bleiben – es geht darum, voraus zu leben. Ob Sie streamen, spielen oder erstellen, SkyLo ist für grenzenlose Ambitionen gebaut.",
+    "mission": "Unsere Mission",
+    "vision": "Unsere Vision",
+    "values": "Unsere Werte"
+  },
+  "contact": {
+    "hero_title": "Kontaktieren Sie uns",
+    "get_in_touch": "Kontakt aufnehmen",
+    "hq_title": "SkyLo Hauptquartier",
+    "email": "info@skylo.net",
+    "phone": "+880 1234 567890",
+    "address": "123 Digital Street, Tech City, Bangladesh",
+    "form": {
+      "skylo_id_placeholder": "Ihre SkyLo ID",
+      "message_placeholder": "Ihre Nachricht",
+      "skylo_id_label": "SkyLo ID"
+    }
+  },
+  "community": {
+    "title": "Haben Sie Spaß mit Ihren Freunden und Tausenden von SkyLo-Benutzern",
+    "membership_description": "Kostenlose SkyLo-Mitgliedskarte, die exklusiv für SkyLo-Kunden erstellt wurde."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "why_download": "Warum sollte ich SkyLo herunterladen?",
+    "why_download_answer": "SkyLo ist die beste digitale Lifestyle-Super-App des Landes mit unbegrenzter Unterhaltung und dem besten 4G-Netzwerk des Landes."
+  },
+  "footer": {
+    "join_us": "Treten Sie uns bei",
+    "terms_privacy": "Geschäftsbedingungen | Datenschutz",
+    "copyright": "COPYRIGHT © SkyLo 2025",
+    "powered_by": "Unterstützt von DailyLume"
+  }
+}

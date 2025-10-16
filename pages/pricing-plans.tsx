@@ -7,6 +7,8 @@ import OttSummaryComponent from '@/components/TelcoPlans/ott-summary-component'
 import Roaming from '@/components/TelcoPlans/roaming'
 import TelcoPackIncluded from '@/components/TelcoPlans/telco-pack-included'
 import TelcoHero from '@/components/TelcoPlans/TelcoHero'
+import { GetServerSideProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function TelcoPlans() {
   return (
@@ -22,3 +24,11 @@ export default function TelcoPlans() {
     </Layout>
   )
 }
+
+export const getServerSideProps = (async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  }
+}) satisfies GetServerSideProps<{}>

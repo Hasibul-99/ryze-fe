@@ -7,7 +7,7 @@ export default function PrivacyHeader() {
             Privacy Policy
           </h2>
           <p className='font-normal text-2xl leading-[32px] text-white'>
-            At Ryze, we take your privacy seriously. Please read this Privacy
+            At SkyLo, we take your privacy seriously. Please read this Privacy
             Policy to learn how we treat your personal data.
           </p>
         </div>
