@@ -1,16 +1,18 @@
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 import ExploreMoreButton from '../ui/explore-more-button'
 import Marquee from '../ui/marquee'
 
 export default function FeatureOtts() {
+  const { t } = useTranslation('common')
+  
   return (
     <section className='py-[120px]'>
       <h2 className='text-center text-xl font-bold sm:text-5xl'>
-        Over 100+ OTTs
+        {t('features.otts_title')}
       </h2>
       <p className='mx-auto mt-6 max-w-[490px] text-center text-base text-[#D0D2D3] sm:text-2xl'>
-        SkyLo offers the best OTTs for you to choose from, there’s something for
-        everyone!
+        {t('features.otts_description')}
       </p>
 
       <div className='relative mt-[50px] flex min-h-[500px] flex-col items-center justify-center sm:mt-[104px] sm:min-h-[656px]'>

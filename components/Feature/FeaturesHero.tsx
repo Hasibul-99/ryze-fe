@@ -1,13 +1,16 @@
 import {telcoPlansDelay} from '@/constants/delay'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 import BlurFade from '../ui/blur-fade'
 
 export default function FeaturesHero() {
+  const { t } = useTranslation('common')
+  
   return (
     <section className='container flex min-h-[500px] flex-col items-center gap-12 overflow-hidden pt-[130px] sm:min-h-[800px]'>
       <BlurFade delay={telcoPlansDelay} inView>
         <h1 className='mt-20 max-w-[882px] text-center text-2xl font-semibold leading-tight sm:text-[64px]'>
-          Customizable home screen based on your lifestyle
+          {t('features.hero_title')}
         </h1>
       </BlurFade>
 
