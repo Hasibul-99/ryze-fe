@@ -37,13 +37,58 @@
     "explore_more": "Explore more"
   },
   "telco": {
+    "hero_title": "Discover flexible high-speed internet plans designed for every lifestyle and budget",
+    "free_ott_title": "Our telco pack with free OTTs included",
+    "free_ott_subtitle": "Starting at just TK 377 per month",
+    "unlimited_4g_title": "Unlimited 4G Internet",
+    "unlimited_4g_description": "Boundless, reliable 4G high-speed network to keep up with your every move",
+    "ott_endless_title": "OTT: Endless Choices",
+    "ott_endless_description": "Curated content across OTT platforms to keep your entertainment fueled to choose from",
+    "ai_powered_title": "AI-Powered App",
+    "ai_powered_description": "Enhance your SkyLo experience with the most intelligent app",
+    "compare_title": "Compare SkyLo telco packs",
+    "compare_subtitle": "Starting at only TK 377 per month",
+    "choose_pack": "Choose a pack",
+    "internet": "Internet",
+    "endless": "Endless",
+    "call": "Call",
+    "min": "Min",
+    "included_otts": "Included OTTs",
+    "loyalty_coin": "Loyalty Coin",
+    "buy_pack": "Buy pack",
+    "disclaimer_vat": "The listed prices are inclusive of VAT/TAX",
+    "disclaimer_app": "Find the updated product price & offers in SkyLo app",
+    "disclaimer_download": "To experience SkyLo full on, download SkyLo app",
     "title": "Enjoy the best 4G network and telco pack with SkyLo",
     "compare_packs": "Compare SkyLo telco packs",
-    "get_started": "Get started",
+    "get_started": "Get Started",
     "included_title": "Included in every SkyLo telco pack",
     "skylo_sim": "SkyLo sim",
     "skylo_membership": "SkyLo membership",
-    "booster_title": "Running low on data or minute in your main SkyLo package? Booster is the solution for you.",
+    "live_chat_support": "24/7 live chat support",
+    "booster_title": "Running out of data or minutes in your main SkyLo pack? Booster is the solution for you.",
+    "booster": "Booster",
+    "booster_description": "Running low on data or minute in your main SkyLo package? Booster is the solution.",
+    "data_add_on": "Data Add on",
+    "voice_add_on": "Voice Add on",
+    "gb": "GB",
+    "min": "Min",
+    "buy": "Buy",
+    "add_ons_ott": "Add-Ons OTT",
+    "add_ons_description": "Need an OTT that's not included in your SkyLo telco pack? Buy them individually as add-ons OTT",
+    "all": "All",
+    "entertainment": "Entertainment",
+    "productivity": "Productivity",
+    "roaming": "Roaming",
+    "roaming_description": "Travel around the globe hassle free with our reliable and high-speed roaming network"
+  },
+  "privacy": {
+    "privacy_policy": "Privacy Policy",
+    "privacy_policy_description": "At SkyLo, we take your privacy seriously. Please read this Privacy Policy to learn how we treat your personal data.",
+    "data_protection": "Data Protection",
+    "policy_privacy": "Policy Privacy",
+    "policy_terms_of_use": "Policy Terms of use",
+    "cookies_policy": "Cookies Policy",
     "add_ons_title": "Need an OTT that's not included in your SkyLo telco pack? Buy them separately as add-ons.",
     "enhance_experience": "Enhance your SkyLo experience with the most intelligent app"
   },
@@ -53,18 +98,70 @@
     "otts_description": "SkyLo offers the best OTTs for you to choose from, there's something for everyone.",
     "gamification": "Gamification & Privileges",
     "app_bundle": "App Bundle & 4G",
-    "entertainment": "Entertainment"
+    "entertainment": "Entertainment",
+    "entertainment_title": "Endless Entertainment, Anytime, Anywhere",
+    "entertainment_description": "Dive into a world of limitless content with curated OTT platforms, streaming your favourite shows and movies wherever life takes you.",
+    "app_bundle_title": "Curated app bundles",
+    "network_label": "Network",
+    "network_description": "The fastest and the most reliable 4G network",
+    "starter_package_title": "Starter Package",
+    "starter_package_description": "Your streaming journey starts here",
+    "gamification_title": "Gamification",
+    "gamification_description": "Gamification",
+    "exclusive_privileges_title": "Exclusive privileges",
+    "exclusive_privileges_description": "Exclusive privileges",
+    "cashback_label": "Cashback",
+    "partners_label": "Partners",
+    "privileges_label": "Privileges",
+    "loyalty_coins": "Loyalty Coins",
+    "redeem": "Redeem",
+    "coins_bundle_purchase": "Coins for Bundle purchase"
   },
   "about": {
-    "hero_title": "About SkyLo",
-    "history_title": "Enjoy sports, movies, TV shows & more with SkyLo",
+    "hero_title": "About Us",
+    "hero_subtitle": "What began as a simple thought became a powerful super app",
+    "history_title": "Enjoy sports, movies, TV shows and more with SkyLo",
     "history_description": "SkyLo began with a belief: the future belongs to those who live digitally. But what if the digital experience moved even faster? SkyLo isn't just about staying connected—it's about living ahead. Whether you're streaming, gaming, or creating, SkyLo is built for limitless ambition.",
     "mission": "Our Mission",
     "vision": "Our Vision",
-    "values": "Our Values"
+    "values": "Our Values",
+    "history_behind": {
+      "content_one": {
+        "title": "Enjoy sports, movies, TV shows & more with SkyLo",
+        "description": "SkyLo began with a belief: the future belongs to those who live without hesitation. In a world that moves fast, we asked—what if your experience moved even faster? SkyLo isn't just about staying connected; it's about empowering bold lifestyles. Whether it's streaming, gaming, or creating, SkyLo is built for limitless ambition. Because today's generation doesn't just go online — they take off."
+      },
+      "content_two": {
+        "active_user": "Active User",
+        "apps_download": "Apps Download",
+        "satisfied_user": "Satisfied User",
+        "partner_joined": "Partner Joined"
+      },
+      "content_three": {
+        "vision_label": "OUR VISION",
+        "vision_text": "To be recognized as a global leader in providing cutting-edge broadband and streaming services, setting the standard for connectivity innovation."
+      },
+      "content_four": {
+        "mission_label": "OUR MISSION",
+        "mission_text": "Empowering everyone with reliable, affordable, and innovative digital experiences rooted in privacy, sustainability, and community.",
+        "digital_lifestyle": "Digital lifestyle",
+        "digital_lifestyle_description": "Elevate the people digital lifestyle and experiences"
+      },
+      "content_five": {
+        "team_label": "Our Executive Team",
+        "team_values": "The values that drive us",
+        "founder_ceo": "Founder & CEO",
+        "co_founder": "Co-Founder",
+        "engineering_manager": "Engineering Manager",
+        "product_manager": "Product Manager"
+      }
+    }
   },
   "contact": {
     "hero_title": "Contact Us",
+    "hero_subtitle": "Have a question? We got you.",
+    "our_headquarter": "Our headquarter",
+    "faq": "FAQ",
+    "contact_us": "Contact Us",
     "get_in_touch": "Get in touch",
     "hq_title": "SkyLo HQ",
     "email": "info@skylo.net",
@@ -73,7 +170,36 @@
     "form": {
       "skylo_id_placeholder": "Your SkyLo ID",
       "message_placeholder": "Your message",
-      "skylo_id_label": "SkyLo ID"
+      "skylo_id_label": "SkyLo ID",
+      "name_label": "Name*",
+      "name_placeholder": "Your Name",
+      "email_label": "Email*",
+      "email_placeholder": "Your email address",
+      "phone_label": "Phone*",
+      "phone_placeholder": "Your phone number",
+      "inquiry_label": "Inquiry",
+      "inquiry_placeholder": "Enter your inquiry here...",
+      "submit": "Submit",
+      "contact_us_title": "Contact Us",
+      "contact_us_subtitle": "Happy to Contact us",
+      "validation": {
+        "name_required": "Name is required",
+        "name_min_length": "Name must be at least 2 characters",
+        "email_required": "Email is required",
+        "email_invalid": "Please enter a valid email address",
+        "phone_required": "Phone number is required",
+        "phone_invalid": "Please enter a valid phone number",
+        "inquiry_required": "Inquiry is required",
+        "inquiry_min_length": "Inquiry must be at least 10 characters"
+      },
+      "hq_title": "SkyLo HQ",
+      "location_label": "LOCATION",
+      "location_address": "Streamit Headquarters123 Streaming Lane, Suite 100Media City, CA 90210, USA",
+      "email_label": "EMAIL",
+      "email_address": "info@skylo.net",
+      "phone_label": "PHONE",
+      "phone_number": "+(480) 555-0103",
+      "social_media_label": "SOCIAL MEDIA"
     }
   },
   "community": {
@@ -83,7 +209,10 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "why_download": "Why should I download SkyLo?",
-    "why_download_answer": "SkyLo is the best digital lifestyle superapp in the country with unlimited entertainment and the best 4G network in the country."
+    "why_download_answer": "SkyLo is the best digital lifestyle superapp in the country with unlimited entertainment and the best 4G network in the country.",
+    "general_questions": "General Questions",
+    "technical_support": "Technical Support",
+    "billing_questions": "Billing Questions"
   },
   "footer": {
     "join_us": "Join Us",

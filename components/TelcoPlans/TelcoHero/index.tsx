@@ -1,8 +1,11 @@
-import BlurFade from '@/components/ui/blur-fade'
-import {telcoPlansDelay} from '@/constants/delay'
-import Image from 'next/image'
+import BlurFade from '@/components/ui/blur-fade';
+import { telcoPlansDelay } from '@/constants/delay';
+import { useTranslation } from "next-i18next";
+import Image from 'next/image';
 
-export default function TelcoHero() {
+const TelcoHero = () => {
+  const { t } = useTranslation("common");
+
   return (
     <section className='container flex min-h-[500px] flex-col items-center overflow-hidden pt-[130px] sm:min-h-[800px]'>
       <div
@@ -14,8 +17,7 @@ export default function TelcoHero() {
 
       <BlurFade delay={telcoPlansDelay} inView>
         <h1 className='mt-20 max-w-[882px] text-center text-xl font-semibold leading-tight sm:text-[42px]'>
-          Discover flexible high-speed internet plans designed for every
-          lifestyle and budget
+          {t("telco.hero_title")}
         </h1>
       </BlurFade>
 
@@ -34,3 +36,5 @@ export default function TelcoHero() {
     </section>
   )
 }
+
+export default TelcoHero;

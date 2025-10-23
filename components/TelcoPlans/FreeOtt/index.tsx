@@ -2,14 +2,17 @@ import StackCarousel from '@/components/TelcoPlans/FreeOtt/stack-carousel'
 import GlobeBack from '@/public/svgs/globe-shape-back-2.svg'
 import GlobeFront from '@/public/svgs/globe-shape-front-2.svg'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 export default function FreeOtt() {
+  const { t } = useTranslation('common')
+
   return (
     <section className='container mt-[120px] flex flex-col items-center'>
       <h2 className='mb-2 max-w-[300px] text-center text-2xl leading-tight md:max-w-[610px] md:text-5xl md:leading-[56px]'>
-        Our telco pack with free OTTs included
+        {t('telco.free_ott_title')}
       </h2>
-      <p className='text-base md:text-2xl'>Starting at just TK 377 per month</p>
+      <p className='text-base md:text-2xl'>{t('telco.free_ott_subtitle')}</p>
 
       <StackCarousel />
 

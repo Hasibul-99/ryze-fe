@@ -1,16 +1,19 @@
+import { useTranslation } from 'next-i18next'
+
 export default function ContentFour() {
+  const { t } = useTranslation('common')
+
   return (
     <div className='inline-block md:block'>
       <div className='mb-5 flex w-screen flex-col items-center gap-6 pt-20 md:mx-auto md:mb-48 md:h-[184px] md:w-10/12 md:gap-8 md:pt-40 '>
         <div className='rounded-full border border-[#FFFFFF] bg-[rgba(109,105,113,0.3)] px-12 py-6 backdrop-blur-[10px] md:px-6 md:py-3'>
           <span className='text-center text-lg font-normal leading-[24px] text-[#FFFFFF] md:text-[16px]'>
-            OUR MISSION
+            {t('about.history_behind.content_four.mission_label')}
           </span>
         </div>
 
         <div className='px-5 text-center text-xl text-[#FFFFFF] md:text-3xl'>
-          Empowering everyone with reliable, affordable, and innovative digital
-          experiences rooted in privacy, sustainability, and community.
+          {t('about.history_behind.content_four.mission_text')}
         </div>
       </div>
 
@@ -25,10 +28,10 @@ export default function ContentFour() {
           </div>
           <div className='flex flex-col items-start justify-between gap-4 p-0 md:flex-row md:gap-[49px]'>
             <h1 className='text-xl font-semibold leading-8 text-white'>
-              Digital lifestyle
+              {t('about.history_behind.content_four.digital_lifestyle_title')}
             </h1>
             <p className='text-lg font-normal leading-7 text-white'>
-              Elevate the people digital lifestyle and experiences
+              {t('about.history_behind.content_four.digital_lifestyle_description')}
             </p>
           </div>
         </div> */}
@@ -87,10 +90,10 @@ export default function ContentFour() {
           </div>
           <div className='flex flex-col items-start justify-between gap-4 p-0 md:flex-row md:gap-[49px]'>
             <h1 className='text-2xl font-semibold leading-8 text-white'>
-              Digital lifestyle
+              {t('about.history_behind.content_four.digital_lifestyle_title')}
             </h1>
             <p className='text-lg font-normal leading-7 text-white'>
-              Elevate the people digital lifestyle and experiences
+              {t('about.history_behind.content_four.digital_lifestyle_description')}
             </p>
           </div>
         </div>

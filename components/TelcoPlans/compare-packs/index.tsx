@@ -15,6 +15,7 @@ import {
 import {cn} from '@/lib/utils'
 import Image from 'next/image'
 import {useState} from 'react'
+import {useTranslation} from 'next-i18next'
 import styles from './compare-packs.module.scss'
 
 const packages = [
@@ -110,7 +111,8 @@ const packages = [
 ]
 
 export default function ComparePacks() {
-  const [selectedPack, setSelectedPack] = useState({
+  const {t} = useTranslation('common')
+  const [selectedPack, setSelectedPack] = useState<{[key: number]: string}>({
     0: '0',
     1: '1',
     2: '2',
@@ -118,14 +120,14 @@ export default function ComparePacks() {
 
   return (
     <div className='container pt-[120px] text-center'>
-      <h2 className='text-xl sm:text-5xl'>Compare SkyLo telco packs</h2>
+      <h2 className='text-xl sm:text-5xl'>{t('telco.compare_title')}</h2>
       <p className='mt-3 text-base sm:mt-6 sm:text-2xl'>
-        Starting at only TK 377 per month
+        {t('telco.compare_subtitle')}
       </p>
 
       <div className='mt-10 flex justify-center gap-4 sm:mt-20 md:gap-10 lg:justify-between'>
         {Array.from({length: 3}).map((_, i) => {
-          const selectedPackage = packages[selectedPack[i] * 1]
+          const selectedPackage = packages[parseInt(selectedPack[i])]
 
           return (
             <div
@@ -144,7 +146,7 @@ export default function ComparePacks() {
                     'bg-[#18191A] border-none focus:border-none rounded-2xl py-3 px-6 font-bold'
                   )}
                 >
-                  <SelectValue placeholder='Choose a pack' />
+                  <SelectValue placeholder={t('telco.choose_pack')} />
                 </SelectTrigger>
                 <SelectContent>
                   {packages.map((pack, idx) => (
@@ -195,12 +197,12 @@ export default function ComparePacks() {
                       alt='internet'
                     />
                     <span className='text-base font-bold lg:text-xl'>
-                      Internet
+                      {t('telco.internet')}
                     </span>
                   </div>
                   <span className='flex items-center gap-1'>
                     {Number(selectedPackage?.data_volume) >= 999999 ? (
-                      <span>Endless</span>
+                      <span>{t('telco.endless')}</span>
                     ) : (
                       selectedPackage?.data_volume + ' GB'
                     )}
@@ -216,16 +218,16 @@ export default function ComparePacks() {
                       height={32}
                       alt='phone'
                     />
-                    <span className='text-base font-bold lg:text-xl'>Call</span>
+                    <span className='text-base font-bold lg:text-xl'>{t('telco.call')}</span>
                   </div>
-                  <span>{selectedPackage?.voice_volume} Min</span>
+                  <span>{selectedPackage?.voice_volume} {t('telco.min')}</span>
                 </div>
 
                 {/* --- ott --- */}
                 <div className='my-2 flex items-center justify-between rounded-2xl bg-[#18191A] px-8 py-6'>
                   <Accordion type='single' collapsible className='w-full'>
                     <AccordionItem value='item-1' className='border-none'>
-                      <AccordionTrigger chevronIcon>
+                      <AccordionTrigger>
                         <div className='flex items-center gap-2'>
                           <Image
                             src='/images/telco-plans/ott.png'
@@ -234,15 +236,12 @@ export default function ComparePacks() {
                             alt='ott'
                           />
                           <span className='hidden text-base font-bold lg:inline lg:text-xl'>
-                            Included OTTs
+                            {t('telco.included_otts')}
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className='flex flex-wrap gap-2 lg:gap-4'>
-                        {/* <span className='text-base font-bold lg:text-xl'>
-                          Included OTTs
-                        </span> */}
-                        {selectedPackage?.ott_icons.map((icon, i) => (
+                        {selectedPackage?.ott_icons?.map((icon: any, i: number) => (
                           <Image
                             className='size-10 rounded-[18px] lg:size-16'
                             key={i}
@@ -266,7 +265,7 @@ export default function ComparePacks() {
                       height={32}
                       alt='medal'
                     />
-                    <span className='text-xl font-bold'>Loyalty Coin</span>
+                    <span className='text-xl font-bold'>{t('telco.loyalty_coin')}</span>
                   </div>
                   <span>{selectedPackage?.loyalty_discount}</span>
                 </div>
@@ -274,14 +273,14 @@ export default function ComparePacks() {
                 {/* --- buy pack --- */}
                 <div className='flex flex-col px-2 py-6 md:px-4'>
                   <Button className='button-bg-gradient btn-shadow h-12 rounded-full py-6 font-bold md:h-16'>
-                    Buy pack
+                    {t('telco.buy_pack')}
                   </Button>
                   <ul className='list-disc pl-4 pt-4 text-start text-sm md:pl-6'>
-                    <li>The listed prices are inclusive of VAT/TAX</li>
+                    <li>{t('telco.disclaimer_vat')}</li>
                     <li>
-                      Find the updated product price & offers in SkyLo app
-          </li>
-          <li>To experience SkyLo full on, download SkyLo app</li>
+                      {t('telco.disclaimer_app')}
+                    </li>
+                    <li>{t('telco.disclaimer_download')}</li>
                   </ul>
                 </div>
               </div>

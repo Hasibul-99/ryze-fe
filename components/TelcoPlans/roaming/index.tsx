@@ -1,14 +1,16 @@
 import Image from 'next/image'
+import {useTranslation} from 'next-i18next'
 import CurvedMarquee from './curved-marquee'
 
 export default function Roaming() {
+  const {t} = useTranslation('common')
+  
   return (
     <section className='py-20'>
       <div className='mb-10 flex flex-col items-center gap-6 px-4 text-center sm:mb-16'>
-        <h2 className='text-xl sm:text-5xl'>Roaming</h2>
+        <h2 className='text-xl sm:text-5xl'>{t('telco.roaming')}</h2>
         <p className='max-w-[575px] text-base text-[#D0D2D3] sm:text-2xl'>
-          Travel around the globe hassle free with our reliable and high-speed
-          roaming network
+          {t('telco.roaming_description')}
         </p>
       </div>
 

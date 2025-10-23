@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
 
 export default function OurHeadQuarter() {
+  const { t } = useTranslation('common')
+  
   return (
     <div
       id='location'
@@ -17,7 +20,7 @@ export default function OurHeadQuarter() {
             height={80}
           />
           <h1 className='font-semibold text-2xl leading-[40px] text-center text-white'>
-            SkyLo HQ
+            {t('contact.hq_title')}
           </h1>
         </div>
 
@@ -25,38 +28,24 @@ export default function OurHeadQuarter() {
           <div className='grid grid-cols-3 p-0 gap-6 '>
             <div>
               <h2 className='font-normal text-[16px] leading-6 text-white'>
-                LOCATION
+                {t('contact.location_label')}
               </h2>
             </div>
             <div className='col-span-2'>
               <p className='font-normal text-base leading-6 text-white'>
-                Streamit Headquarters123 Streaming Lane, Suite 100Media City, CA
-                90210, USA
+                {t('contact.location_address')}
               </p>
             </div>
             <div className='col-span-3 w-full border border-[#969A9C]'></div>
 
             <div>
               <h2 className='font-normal text-[16px] leading-6 text-white'>
-                EMAIL
+                {t('contact.email_label')}
               </h2>
             </div>
             <div className='col-span-2'>
               <p className='font-normal text-base leading-6 text-white'>
-                info@skylo.net
-              </p>
-            </div>
-
-            <div className='col-span-3 w-full border border-[#969A9C]'></div>
-
-            <div>
-              <h2 className='font-normal text-[16px] leading-6 text-white'>
-                PHONE
-              </h2>
-            </div>
-            <div className='col-span-2'>
-              <p className='font-normal text-base leading-6 text-white'>
-                +(480) 555-0103
+                {t('contact.email_address')}
               </p>
             </div>
 
@@ -64,7 +53,20 @@ export default function OurHeadQuarter() {
 
             <div>
               <h2 className='font-normal text-[16px] leading-6 text-white'>
-                SOCIAL MEDIA
+                {t('contact.phone_label')}
+              </h2>
+            </div>
+            <div className='col-span-2'>
+              <p className='font-normal text-base leading-6 text-white'>
+                {t('contact.phone_number')}
+              </p>
+            </div>
+
+            <div className='col-span-3 w-full border border-[#969A9C]'></div>
+
+            <div>
+              <h2 className='font-normal text-[16px] leading-6 text-white'>
+                {t('contact.social_media_label')}
               </h2>
             </div>
             <div className='col-span-2'>

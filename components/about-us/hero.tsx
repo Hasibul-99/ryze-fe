@@ -1,6 +1,9 @@
 import {BigPlayButton, Player} from 'video-react'
+import { useTranslation } from 'next-i18next'
 
 export default function AboutHero() {
+  const { t } = useTranslation('common')
+  
   return (
     <section>
       <div
@@ -14,12 +17,12 @@ export default function AboutHero() {
         <div className='flex flex-col items-center lg:w-9/12 pt-8 md:pt-16 mb-16 md:mb-28 gap-10 w-full md:h-[184px] mx-auto'>
           <div className='py-6 md:py-3 px-12 md:px-6 bg-[rgba(109,105,113,0.3)] border border-[#FFFFFF] backdrop-blur-[10px] rounded-full'>
             <span className='font-normal text-3xl md:text-[16px] leading-6 md:leading-[24px] text-center text-[#FFFFFF]'>
-              About Us
+              {t('about.hero_title')}
             </span>
           </div>
 
           <div className='w-64 md:w-auto text-xl leading-8 font-normal md:text-[40px] md:leading-[48px] text-center text-[#FFFFFF]'>
-            What began as a simple thought became a powerful super app
+            {t('about.hero_subtitle')}
           </div>
         </div>
 

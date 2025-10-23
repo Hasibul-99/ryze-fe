@@ -6,8 +6,11 @@ import {
 } from '@/components/ui/accordion'
 import parse from 'html-react-parser'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 export default function FAQ() {
+  const { t } = useTranslation('common')
+  
   return (
     <section
       id='faq'
@@ -22,7 +25,7 @@ export default function FAQ() {
           className='mt-5'
         />
         <h2 className='cursor-pointer text-[20px] md:w-1/2 md:text-[32px]'>
-          Frequently Asked Questions
+          {t('faq.title')}
         </h2>
       </div>
 
@@ -36,12 +39,10 @@ export default function FAQ() {
           {[1, 11, 1, 1].map((item: any, key: number) => (
             <AccordionItem key={key} value={key.toString()}>
               <AccordionTrigger className='my-4'>
-                Why should I download SkyLo? MINUS
+                {t('faq.why_download')}
               </AccordionTrigger>
               <AccordionContent className='text-[#B0B3B5]'>
-                {parse(
-                  'SkyLo is the best digital lifestyle superapp in the country with unlimited entertainment and the best 4G network in the country.'
-                )}
+                {parse(t('faq.why_download_answer'))}
               </AccordionContent>
             </AccordionItem>
           ))}

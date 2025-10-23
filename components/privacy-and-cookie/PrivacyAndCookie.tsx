@@ -1,7 +1,9 @@
 import {useState} from 'react'
+import {useTranslation} from 'next-i18next'
 import SelectCustom from '../common/Select'
 
 export default function PrivacyAndCookieContent() {
+  const {t} = useTranslation('common')
   const [selectedTab, setSelectedTab] = useState<string | undefined>(
     'data-protection'
   )
@@ -15,7 +17,7 @@ export default function PrivacyAndCookieContent() {
           }`}
           onClick={() => setSelectedTab('data-protection')}
         >
-          Data Protection
+          {t('privacy.data_protection')}
         </div>
 
         <div
@@ -24,7 +26,7 @@ export default function PrivacyAndCookieContent() {
           }`}
           onClick={() => setSelectedTab('policy-privacy')}
         >
-          Policy Privacy
+          {t('privacy.policy_privacy')}
         </div>
 
         <div
@@ -35,7 +37,7 @@ export default function PrivacyAndCookieContent() {
           }`}
           onClick={() => setSelectedTab('policy-terms-of-use')}
         >
-          Policy Terms of use
+          {t('privacy.policy_terms_of_use')}
         </div>
 
         <div
@@ -44,7 +46,7 @@ export default function PrivacyAndCookieContent() {
           }`}
           onClick={() => setSelectedTab('cookies-policy')}
         >
-          Cookies Policy
+          {t('privacy.cookies_policy')}
         </div>
       </div>
 
@@ -52,10 +54,10 @@ export default function PrivacyAndCookieContent() {
         <div className='md:hidden w-full mt-20'>
           <SelectCustom
             options={[
-              {value: 'data-protection', lable: 'Data Protection'},
-              {value: 'policy-privacy', lable: 'Policy Privacy'},
-              {value: 'policy-terms-of-use', lable: 'Policy Terms of use'},
-              {value: 'cookies-policy', lable: 'Cookies Policy'},
+              {value: 'data-protection', label: t('privacy.data_protection')},
+              {value: 'policy-privacy', label: t('privacy.policy_privacy')},
+              {value: 'policy-terms-of-use', label: t('privacy.policy_terms_of_use')},
+              {value: 'cookies-policy', label: t('privacy.cookies_policy')},
             ]}
             setSelectedTab={setSelectedTab}
             value={selectedTab}
@@ -63,13 +65,13 @@ export default function PrivacyAndCookieContent() {
         </div>
 
         <div>
-          {selectedTab === 'data-protection' ? <dataProtection /> : null}
+          {selectedTab === 'data-protection' ? <DataProtection /> : null}
         </div>
       </div>
     </section>
   )
 }
 
-export const dataProtection = () => {
+export const DataProtection = () => {
   return <>Hello</>
 }

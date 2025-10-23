@@ -31,19 +31,23 @@ const HeroItem = ({
   )
 }
 
+import { useTranslation } from "next-i18next";
+
 export default function ConTactUsHero() {
+  const { t } = useTranslation("common");
+  
   return (
     <section>
       <div className='secondary-gradient overflow-hidden pt-28'>
         <div className='mx-auto mb-16 flex w-full flex-col items-center gap-10 pt-8 md:mb-28 md:h-[184px] md:pt-16 lg:w-9/12 '>
           <div className='rounded-full border border-[#FFFFFF] bg-[rgba(109,105,113,0.3)] px-12 py-6 backdrop-blur-[10px] md:px-6 md:py-3'>
             <span className='text-center text-[16px] font-normal leading-[24px] text-[#FFFFFF]'>
-              CONTACT US
+              {t("contact.hero_title")}
             </span>
           </div>
 
           <div className='w-64 text-center text-2xl font-semibold leading-8 text-[#FFFFFF] md:w-auto md:text-[40px] md:font-normal md:leading-[48px]'>
-            Have a question? We got you.
+            {t("contact.hero_subtitle")}
           </div>
         </div>
 
@@ -51,21 +55,21 @@ export default function ConTactUsHero() {
           <HeroItem
             imgSrc={'/images/contact-us/map-pin.png'}
             alt='map-pin'
-            title={'Our headquarter'}
+            title={t("contact.our_headquarter")}
             id='location'
           />
 
           <HeroItem
             imgSrc={'/images/contact-us/faq-icon.png'}
             alt='copy-front'
-            title={'FAQ'}
+            title={t("contact.faq")}
             id='faq'
           />
 
           <HeroItem
             imgSrc={'/images/contact-us/customer-service.png'}
             alt='chat-bubble'
-            title={'Contact Us'}
+            title={t("contact.contact_us")}
             id='contact-us-form'
           />
         </div>

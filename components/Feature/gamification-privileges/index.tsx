@@ -1,9 +1,12 @@
 import {Button} from '@/components/ui/button'
 import {ArrowRight} from 'lucide-react'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 import Wheel from './wheel'
 
 export default function GamificationPrivileges() {
+  const { t } = useTranslation('common')
+
   return (
     <section className='container mt-8 flex flex-col gap-8 lg:flex-row'>
       <div
@@ -14,10 +17,10 @@ export default function GamificationPrivileges() {
       >
         <div className='flex h-24 flex-col justify-center gap-2'>
           <h2 className='origin-left text-left text-xl font-semibold transition-all duration-300 sm:text-[40px] sm:group-hover/gamification:scale-75'>
-            Gamification
+            {t('features.gamification_title')}
           </h2>
           <p className='text-base opacity-100 transition-opacity duration-300 group-hover/gamification:opacity-100 sm:opacity-0'>
-            hello
+            {t('features.gamification_description')}
           </p>
         </div>
 
@@ -38,10 +41,10 @@ export default function GamificationPrivileges() {
 
       <div className='group/privileges w-full rounded-3xl bg-[#1D0A29] p-4 sm:p-8 lg:w-1/2'>
         <h2 className='text-xl font-semibold sm:text-[40px]'>
-          Exclusive privileges
+          {t('features.exclusive_privileges_title')}
         </h2>
         <p className='text-base opacity-100 transition-opacity group-hover/privileges:opacity-100 sm:text-xl sm:opacity-0'>
-          Exclusive privileges
+          {t('features.exclusive_privileges_description')}
         </p>
 
         <div className='mx-auto my-8 flex max-w-[482px] items-center justify-between'>
@@ -60,7 +63,7 @@ export default function GamificationPrivileges() {
               className='flex size-20 flex-col items-center justify-center rounded-2xl bg-cover bg-center bg-no-repeat text-center sm:size-32'
             >
               <h3 className='text-lg font-bold sm:text-2xl'>15%</h3>
-              <p>Cashback</p>
+              <p>{t('features.cashback_label')}</p>
             </div>
           </div>
 
@@ -71,7 +74,7 @@ export default function GamificationPrivileges() {
             className='flex size-24 rotate-12 flex-col items-center justify-center rounded-2xl bg-cover bg-center bg-no-repeat text-center sm:size-[150px]'
           >
             <h3 className='text-lg font-bold sm:text-2xl'>50+</h3>
-            <p>Partners</p>
+            <p>{t('features.partners_label')}</p>
           </div>
 
           <div className='relative'>
@@ -89,7 +92,7 @@ export default function GamificationPrivileges() {
               className='flex size-20 flex-col items-center justify-center rounded-2xl bg-cover bg-center bg-no-repeat text-center sm:size-32'
             >
               <h3 className='text-lg font-bold sm:text-2xl'>100+</h3>
-              <p>Privileges</p>
+              <p>{t('features.privileges_label')}</p>
             </div>
           </div>
         </div>
@@ -115,7 +118,7 @@ export default function GamificationPrivileges() {
                 className='rounded-3xl bg-transparent text-xs sm:text-xl'
                 variant='outline'
               >
-                Loyalty Coins
+                {t('features.loyalty_coins')}
               </Button>
               <div className='flex size-10 items-center justify-center rounded-full bg-white p-1'>
                 <Image
@@ -135,7 +138,7 @@ export default function GamificationPrivileges() {
                 className='rounded-3xl bg-transparent text-xs sm:text-xl'
                 variant='outline'
               >
-                Redeem
+                {t('features.redeem')}
               </Button>
             </div>
           </div>
@@ -147,7 +150,7 @@ export default function GamificationPrivileges() {
             className='flex w-1/2 items-center justify-center rounded-3xl bg-cover bg-center bg-no-repeat p-3 pt-4 sm:p-6'
           >
             <h3 className='text-lg font-semibold sm:text-xl'>
-              Coins for Bundle purchase
+              {t('features.coins_bundle_purchase')}
             </h3>
           </div>
         </div>

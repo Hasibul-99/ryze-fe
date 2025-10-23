@@ -2,8 +2,11 @@ import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 import GlobeBack from '@/public/svgs/globe-shape-back.svg'
 import GlobeFront from '@/public/svgs/globe-shape-front.svg'
 import Image from 'next/image'
+import {useTranslation} from 'next-i18next'
 
 export default function AddOns() {
+  const {t} = useTranslation('common')
+  
   return (
     <section className='pb-20'>
       <div
@@ -27,10 +30,9 @@ export default function AddOns() {
       </div>
 
       <div className='container mt-[-150px] md:mt-[-200px]'>
-        <h2 className='text-center text-xl sm:text-5xl'>Add-Ons OTT</h2>
+        <h2 className='text-center text-xl sm:text-5xl'>{t('telco.add_ons_ott')}</h2>
         <p className='mx-auto mt-6 max-w-[530px] text-center text-base text-[#D0D2D3] sm:text-2xl'>
-          Need an OTT that’s not included in your SkyLo telco pack? Buy them
-          individually as add-ons OTT
+          {t('telco.add_ons_description')}
         </p>
 
         <Tabs defaultValue='all' className='w-full'>
@@ -39,21 +41,21 @@ export default function AddOns() {
               value={'all'}
               className='rounded-full text-base font-semibold'
             >
-              All
+              {t('telco.all')}
             </TabsTrigger>
 
             <TabsTrigger
               value={'entertainment'}
               className='rounded-full text-base font-semibold'
             >
-              Entertainment
+              {t('telco.entertainment')}
             </TabsTrigger>
 
             <TabsTrigger
               value={'productivity'}
               className='rounded-full text-base font-semibold'
             >
-              Productivity
+              {t('telco.productivity')}
             </TabsTrigger>
           </TabsList>
 
@@ -62,7 +64,7 @@ export default function AddOns() {
             // className={idx === 0 ? '' : 'mt-[60px] sm:mt-[120px]'}
             >
               <h3 className='text-right text-[28px] font-semibold'>
-                Entertainment
+                {t('telco.entertainment')}
               </h3>
               <div className='mt-[30px] flex flex-wrap justify-center gap-8'>
                 <div className='icon-box-shadow rounded-2xl p-4 md:rounded-3xl'>
@@ -93,7 +95,7 @@ export default function AddOns() {
             // className={idx === 0 ? '' : 'mt-[60px] sm:mt-[120px]'}
             >
               <h3 className='text-right text-[28px] font-semibold'>
-                Productivity
+                {t('telco.productivity')}
               </h3>
               <div className='mt-[30px] flex flex-wrap justify-center gap-8'>
                 <div className='icon-box-shadow rounded-2xl p-4 md:rounded-3xl'>
@@ -126,7 +128,7 @@ export default function AddOns() {
             // className={idx === 0 ? '' : 'mt-[60px] sm:mt-[120px]'}
             >
               <h3 className='text-right text-[28px] font-semibold'>
-                Entertainment
+                {t('telco.entertainment')}
               </h3>
               <div className='mt-[30px] flex flex-wrap justify-center gap-8'>
                 <div className='icon-box-shadow rounded-2xl p-4 md:rounded-3xl'>
@@ -159,7 +161,7 @@ export default function AddOns() {
             // className={idx === 0 ? '' : 'mt-[60px] sm:mt-[120px]'}
             >
               <h3 className='text-right text-[28px] font-semibold'>
-                Productivity
+                {t('telco.productivity')}
               </h3>
               <div className='mt-[30px] flex flex-wrap justify-center gap-8'>
                 <div className='icon-box-shadow rounded-2xl p-4 md:rounded-3xl'>

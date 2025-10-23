@@ -4,18 +4,19 @@ import {Button} from '@/components/ui/button'
 import {cn} from '@/lib/utils'
 import {BellDot} from 'lucide-react'
 import Image from 'next/image'
+import {useTranslation} from 'next-i18next'
 import {useState} from 'react'
 
 export default function Booster() {
+  const {t} = useTranslation('common')
   const [dataBooster, setDataBooster] = useState(15)
   const [voiceBooster, setVoiceBooster] = useState(60)
 
   return (
     <div className='container flex flex-col items-center py-[60px] sm:py-[120px]'>
-      <h2 className='text-center text-xl font-bold sm:text-5xl'>Booster</h2>
+      <h2 className='text-center text-xl font-bold sm:text-5xl'>{t('telco.booster')}</h2>
       <p className='mx-auto mt-6 max-w-[500px] text-center text-base text-[#D0D2D3] sm:text-2xl'>
-        Running low on data or minute in your main SkyLo package? Booster is the
-        solution.
+        {t('telco.booster_description')}
       </p>
 
       <div className='relative mx-auto mt-16 w-[312px] rounded-[60px] border-4 border-[#B4B2A7] sm:w-[366px]'>
@@ -68,7 +69,7 @@ export default function Booster() {
           <div className='mt-8 rounded-2xl bg-[#F2F2F7] p-6 text-black'>
             {/* --- data add on --- */}
             <div>
-              <h3 className='mb-2 font-bold'>Data Add on</h3>
+              <h3 className='mb-2 font-bold'>{t('telco.data_add_on')}</h3>
               <div className='flex gap-1.5'>
                 {[5, 10, 15, 20, 25].map((data, index) => (
                   <div
@@ -79,7 +80,7 @@ export default function Booster() {
                     )}
                     onClick={() => setDataBooster(data)}
                   >
-                    {data} GB
+                    {data} {t('telco.gb')}
                   </div>
                 ))}
               </div>
@@ -96,13 +97,13 @@ export default function Booster() {
                 }}
               />
               <div className='rounded-lg bg-white px-4 py-2 font-bold shadow-sm'>
-                {dataBooster} GB
+                {dataBooster} {t('telco.gb')}
               </div>
             </div>
 
             {/* --- voice add on --- */}
             <div className='mt-8'>
-              <h3 className='mb-2 font-bold'>Voice Add on</h3>
+              <h3 className='mb-2 font-bold'>{t('telco.voice_add_on')}</h3>
               <div className='flex gap-1.5'>
                 {[20, 40, 60, 80].map((data, index) => (
                   <div
@@ -113,7 +114,7 @@ export default function Booster() {
                     )}
                     onClick={() => setVoiceBooster(data)}
                   >
-                    {data} Min
+                    {data} {t('telco.min')}
                   </div>
                 ))}
               </div>
@@ -130,13 +131,13 @@ export default function Booster() {
                 }}
               />
               <div className='rounded-lg bg-white px-4 py-2 font-bold shadow-sm'>
-                {voiceBooster} Min
+                {voiceBooster} {t('telco.min')}
               </div>
             </div>
           </div>
 
           <Button className='btn btn-explore-more mt-6 h-12 w-full rounded-full bg-[#9413F1] font-bold hover:bg-[#9c24f1]'>
-            Buy
+            {t('telco.buy')}
           </Button>
 
           <div className='mx-auto mt-10 h-1.5 w-40 rounded-full bg-white' />

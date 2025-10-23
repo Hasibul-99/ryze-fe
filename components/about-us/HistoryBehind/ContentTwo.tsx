@@ -1,4 +1,8 @@
+import { useTranslation } from 'next-i18next'
+
 export default function ContentTwo() {
+  const { t } = useTranslation('common')
+
   return (
     <div className='md:flex md:h-screen w-screen md:w-full px-10'>
       <div>
@@ -19,7 +23,7 @@ export default function ContentTwo() {
               </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Active User
+              {t('about.history_behind.content_two.active_user')}
             </p>
           </div>
           <div className='flex flex-col items-center md:items-end p-0 gap-[8px]'>
@@ -30,7 +34,7 @@ export default function ContentTwo() {
               </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Apps Download
+              {t('about.history_behind.content_two.apps_download')}
             </p>
           </div>
         </div>
@@ -43,7 +47,7 @@ export default function ContentTwo() {
               </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Satisfied User
+              {t('about.history_behind.content_two.satisfied_user')}
             </p>
           </div>
           <div className='flex flex-col items-center md:items-end p-0 gap-[8px]'>
@@ -54,7 +58,7 @@ export default function ContentTwo() {
               </span>
             </h1>
             <p className='font-normal text-base leading-6 md:text-[18px] md:leading-[32px] text-white'>
-              Partner Joined
+              {t('about.history_behind.content_two.partner_joined')}
             </p>
           </div>
         </div>

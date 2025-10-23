@@ -9,26 +9,29 @@ import {
 import {zodResolver} from '@hookform/resolvers/zod'
 import {useForm} from 'react-hook-form'
 import {z} from 'zod'
+import { useTranslation } from 'next-i18next'
 
 import {Button} from '@/components/ui/button'
 import {Input} from '@/components/ui/input'
 import {Textarea} from '@/components/ui/textarea'
 
-const FormSchema = z.object({
-  name: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
-  }),
-  email: z.string().email({message: 'Invalid email address.'}),
-  phone: z
-    .string()
-    .min(10, {message: 'Phone number must be at least 10 digits.'}),
-  SkyLoid: z.number().min(1, {message: 'SkyLo ID must be a positive number.'}),
-  inquiry: z
-    .string()
-    .min(10, {message: 'Inquiry must be at least 10 characters long.'}),
-})
-
 export default function EnquiryForm() {
+  const { t } = useTranslation('common')
+  
+  const FormSchema = z.object({
+    name: z.string().min(2, {
+      message: t('contact.form.validation.username_min'),
+    }),
+    email: z.string().email({message: t('contact.form.validation.email_invalid')}),
+    phone: z
+      .string()
+      .min(10, {message: t('contact.form.validation.phone_min')}),
+    SkyLoid: z.number().min(1, {message: t('contact.form.validation.skylo_id_positive')}),
+    inquiry: z
+      .string()
+      .min(10, {message: t('contact.form.validation.inquiry_min')}),
+  })
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -40,16 +43,7 @@ export default function EnquiryForm() {
   })
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log('data', data)
 
-    // toast({
-    //   title: "You submitted the following values:",
-    //   description: (
-    //     <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-    //       <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-    //     </pre>
-    //   ),
-    // })
   }
 
   return (
@@ -66,17 +60,16 @@ export default function EnquiryForm() {
           />
           <div className='order-1 md:order-2'>
             <h1 className='font-semibold text-xl leading-8 md:text-4xl md:leading-12 text-white mb-2'>
-              Contact Us
+              {t('contact.form.contact_us_title')}
             </h1>
             <p className='font-normal text-base leading-6 md:text-lg md:leading-7 text-white'>
-              Happy to Contact us
+              {t('contact.form.contact_us_subtitle')}
             </p>
           </div>
         </div>
 
         <div className='w-full md:w-6/12'>
           <Form {...form}>
-            {/*   */}
             <form onSubmit={form.handleSubmit(onSubmit)} className=''>
               <div className='grid grid-cols-1 md:grid-cols-2 p-0 gap-6'>
                 <FormField
@@ -84,10 +77,10 @@ export default function EnquiryForm() {
                   name='name'
                   render={({field}) => (
                     <FormItem>
-                      <FormLabel>Name*</FormLabel>
+                      <FormLabel>{t('contact.form.name_label')}</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder='Your Name'
+                          placeholder={t('contact.form.name_placeholder')}
                           {...field}
                           className='bg-[#18191A] border-[#18191A]'
                         />
@@ -102,10 +95,10 @@ export default function EnquiryForm() {
                   name='email'
                   render={({field}) => (
                     <FormItem>
-                      <FormLabel>Email*</FormLabel>
+                      <FormLabel>{t('contact.form.email_label')}</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder='Your email address'
+                          placeholder={t('contact.form.email_placeholder')}
                           {...field}
                           className='bg-[#18191A] border-[#18191A]'
                         />
@@ -120,10 +113,10 @@ export default function EnquiryForm() {
                   name='phone'
                   render={({field}) => (
                     <FormItem>
-                      <FormLabel>Phone* </FormLabel>
+                      <FormLabel>{t('contact.form.phone_label')}</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder='Your phone number'
+                          placeholder={t('contact.form.phone_placeholder')}
                           {...field}
                           className='bg-[#18191A] border-[#18191A]'
                         />
@@ -138,11 +131,11 @@ export default function EnquiryForm() {
                   name='SkyLoid'
                   render={({field}) => (
                     <FormItem>
-                      <FormLabel>SkyLo ID</FormLabel>
+                      <FormLabel>{t('contact.form.skylo_id_label')}</FormLabel>
                       <FormControl>
                         <Input
                           type='number'
-                          placeholder='Your SkyLo ID'
+                          placeholder={t('contact.form.skylo_id_placeholder')}
                           {...field}
                           className='bg-[#18191A] border-[#18191A]'
                         />
@@ -157,10 +150,10 @@ export default function EnquiryForm() {
                     name='inquiry'
                     render={({field}) => (
                       <FormItem>
-                        <FormLabel>Inquiry</FormLabel>
+                        <FormLabel>{t('contact.form.inquiry_label')}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder='Enter your inquiry here...'
+                            placeholder={t('contact.form.inquiry_placeholder')}
                             {...field}
                             className='bg-[#18191A] border-[#18191A]'
                           />
@@ -177,7 +170,7 @@ export default function EnquiryForm() {
   shadow-[inset_-4px_0px_4px_rgba(213,200,221,0.25),inset_4px_0px_4px_rgba(214,200,221,0.25),inset_0px_4px_4px_rgba(214,200,221,0.25)] 
   rounded-full mx-auto pl-12'
                   >
-                    Submit
+                    {t('contact.form.submit')}
                     <img
                       src='/svgs/submit-round-top.svg'
                       alt='submit-round-top'
