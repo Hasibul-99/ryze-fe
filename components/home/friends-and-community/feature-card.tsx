@@ -8,12 +8,14 @@ import {
   CardHeader,
   CardTitle,
 } from '../../ui/card'
+import { useTranslation } from 'next-i18next'
 
 type Props = {
   className?: string
 }
 
 export default function FeatureCard({className}: Props) {
+  const { t } = useTranslation('common')
   return (
     <Card
       className={cn(
@@ -24,13 +26,13 @@ export default function FeatureCard({className}: Props) {
       <CardHeader className='flex flex-col items-center px-1'>
         <Image
           src={'/images/home/fnc/crow-dynamic-color.png'}
-          alt='card image'
+          alt={t('friends_and_community.card_image_alt')}
           width={80}
           height={80}
         />
-        <CardTitle className='text-[28px] font-bold'>Membership card</CardTitle>
+        <CardTitle className='text-[28px] font-bold'>{t('friends_and_community.membership_card_title')}</CardTitle>
         <CardDescription className='text-base text-white'>
-          Free SkyLo membership card made exclusively for SkyLo customers.
+          {t('friends_and_community.membership_card_description')}
         </CardDescription>
       </CardHeader>
 
@@ -45,7 +47,7 @@ export default function FeatureCard({className}: Props) {
         <Image
           className='rounded-[10px]'
           src={'/images/home/fnc/membership-card.png'}
-          alt='footer image'
+          alt={t('friends_and_community.footer_image_alt')}
           fill
           quality={100}
         />

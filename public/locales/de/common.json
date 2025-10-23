@@ -34,7 +34,10 @@
   "privileges": {
     "title": "Aufregende Privilegien warten auf Sie",
     "description": "Exklusive Lifestyle-Privilegien, die nur für SkyLo-Mitglieder kuratiert wurden",
-    "explore_more": "Mehr erkunden"
+    "explore_more": "Mehr erkunden",
+    "footer_image_alt": "Fußzeilenbild",
+    "discount_name": "5% Rabatt",
+    "food_panda": "Food Panda"
   },
   "telco": {
     "hero_title": "Entdecken Sie flexible Hochgeschwindigkeits-Internetpläne, die für jeden Lebensstil und jedes Budget entwickelt wurden",
@@ -215,6 +218,33 @@
     "join_us": "Treten Sie uns bei",
     "terms_privacy": "Geschäftsbedingungen | Datenschutz",
     "copyright": "COPYRIGHT © SkyLo 2025",
-    "powered_by": "Unterstützt von DailyLume"
+    "powered_by": "Betrieben von DailyLume"
+  },
+  "platforms": {
+    "title": "Die weltweit führenden Unterhaltungs- und Produktivitätsplattformen in einer App",
+    "card_image_alt": "Kartenbild"
+  },
+  "powerup_tools": {
+    "title": "Verstärken Sie Ihre Arbeit mit den besten Tools",
+    "subtitle": "Die Arbeit wird nie einfacher mit Hilfe unserer Produktivitäts-Tools",
+    "tool_name": "Click Up",
+    "icon_alt": "Symbol",
+    "explore_more": "Mehr erkunden"
+  },
+  "telco_pack": {
+    "title": "Genießen Sie das beste 4G-Netzwerk und Telco-Paket mit SkyLo",
+    "subtitle": "Beginnend bei nur TK 299 pro Monat",
+    "telco_alt": "Telco",
+    "explore_more": "Mehr erkunden"
+  },
+  "friends_and_community": {
+    "title": "Haben Sie Spaß mit Ihren Freunden und Tausenden von SkyLo-Benutzern",
+    "user_alt": "Benutzer",
+    "bg_gradient_alt": "Hintergrund-Verlauf",
+    "avatar_alt": "Avatar",
+    "card_image_alt": "Kartenbild",
+    "footer_image_alt": "Fußzeilenbild",
+    "membership_card_title": "Mitgliedskarte",
+    "membership_card_description": "Kostenlose SkyLo-Mitgliedskarte exklusiv für SkyLo-Kunden."
   }
 }

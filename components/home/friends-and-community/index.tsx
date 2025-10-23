@@ -4,8 +4,10 @@ import BgGradient from '@/public/svgs/globe-gradient.svg'
 import Image from 'next/image'
 import {useEffect, useState} from 'react'
 import FeatureCard from './feature-card'
+import { useTranslation } from 'next-i18next'
 
 export default function FriendsAndCommunity() {
+  const { t } = useTranslation('common')
   const [startingRadius, setStartingRadius] = useState(100)
   const {width} = useWindowSize()
 
@@ -23,7 +25,7 @@ export default function FriendsAndCommunity() {
       <div className='relative mx-auto flex size-full h-[550px] max-w-3xl items-center justify-center overflow-hidden rounded-lg md:h-[750px] md:shadow-xl'>
         <div className='absolute left-0 top-8 z-20 flex w-full justify-center bg-black/50 text-center'>
           <p className='max-w-[333px] text-2xl leading-tight md:max-w-[632px] md:text-5xl'>
-            Join the fun with your friends and thousands of SkyLo users
+            {t('friends_and_community.title')}
           </p>
         </div>
 
@@ -37,14 +39,14 @@ export default function FriendsAndCommunity() {
           <Image
             className='!left-[-15%] !h-[130%] !w-[130%] !max-w-[200%] object-cover'
             src={'/images/home/9d0.jpeg'}
-            alt='User'
+            alt={t('friends_and_community.user_alt')}
             fill
             quality={100}
           />
         </div>
         <Image
           src={BgGradient}
-          alt='bg gradient'
+          alt={t('friends_and_community.bg_gradient_alt')}
           className='left-0 top-0 -z-20 size-full'
           fill
         />
@@ -81,7 +83,7 @@ export default function FriendsAndCommunity() {
                   width={startingRadius}
                   height={startingRadius}
                   src={'/images/icons/chorki.png'}
-                  alt='avatar'
+                  alt={t('friends_and_community.avatar_alt')}
                 />
               </OrbitingCircles>
             )

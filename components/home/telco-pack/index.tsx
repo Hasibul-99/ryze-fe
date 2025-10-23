@@ -7,8 +7,10 @@ import {
 } from '@/components/ui/carousel'
 import Image from 'next/image'
 import ExploreMoreButton from '../../ui/explore-more-button'
+import { useTranslation } from 'next-i18next'
 
 export default function TelcoPack() {
+  const { t } = useTranslation('common')
   return (
     <section
       id='telcoPack'
@@ -27,10 +29,10 @@ export default function TelcoPack() {
         {/* --- heading --- */}
         <div className='max-w-[630px] text-center'>
           <h2 className='text-xl md:text-5xl'>
-            Enjoy the best 4G network and telco pack with SkyLo
+            {t('telco_pack.title')}
           </h2>
           <p className='mt-6 text-lg text-[#D0D2D3] md:text-2xl'>
-            Starting at just TK 299 per month
+            {t('telco_pack.subtitle')}
           </p>
         </div>
 
@@ -41,14 +43,14 @@ export default function TelcoPack() {
                 <div className='relative mx-auto h-[500px] w-[250px] md:h-[600px] md:w-[300px]'>
                   <Image
                     src={'/images/home/telco/telco-1.png'}
-                    alt='telco'
+                    alt={t('telco_pack.telco_alt')}
                     className='w-full rounded-3xl'
                     fill
                     quality={100}
                   />
                   <Image
                     src={'/images/home/telco/telco-1-up.png'}
-                    alt='telco'
+                    alt={t('telco_pack.telco_alt')}
                     className='absolute -left-1/2 top-[-50px] hidden md:block'
                     width={250}
                     height={180}
@@ -57,7 +59,7 @@ export default function TelcoPack() {
                   <div className='button-bg-gradient SkyLo-sim-shadow absolute right-[-30%] top-1/3 hidden size-[130px] translate-x-[-30%] items-center justify-center rounded-full opacity-95 md:flex'>
                     <Image
                       src={'/images/home/telco/skylo-sim.gif'}
-                      alt='telco'
+                      alt={t('telco_pack.telco_alt')}
                       width={344}
                       height={432}
                       quality={100}
@@ -66,7 +68,7 @@ export default function TelcoPack() {
                   </div>
                 </div>
                 <ExploreMoreButton
-                  label={'Explore more'}
+                  label={t('telco_pack.explore_more')}
                   link={'/'}
                   className='telco-pack mx-auto'
                 />

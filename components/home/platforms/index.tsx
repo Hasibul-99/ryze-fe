@@ -2,9 +2,12 @@ import {cn} from '@/lib/utils'
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
+import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 
 const CurvedSwiper = () => {
+  const {t} = useTranslation('common')
+  
   useGSAP(() => {
     const timeLine = gsap.timeline()
 
@@ -69,8 +72,7 @@ const CurvedSwiper = () => {
           <div className='cardwheel-main'>
             <div className='cardwheel-header mt-20 px-4 md:mt-0'>
               <h2 className='text-3xl md:text-5xl'>
-                The world’s leading entertainment & productivity platforms in
-                one app
+                {t('platforms.title')}
               </h2>
             </div>
             <div className='cardwheel-body'>
@@ -85,7 +87,7 @@ const CurvedSwiper = () => {
                           '/images/home/platforms/Flux_Dev_A_happy_young_Caucasian_woman_with_long_brunette_hair_1.jpg'
                         }
                         loading='lazy'
-                        alt='card image'
+                        alt={t('platforms.card_image_alt')}
                         quality={100}
                       />
                     </div>
@@ -102,7 +104,7 @@ const CurvedSwiper = () => {
                           '/images/home/platforms/Flux_Dev_A_young_Caucasian_male_with_mediumlength_brown_hair_a_0.jpg'
                         }
                         loading='lazy'
-                        alt='card image'
+                        alt={t('platforms.card_image_alt')}
                         quality={100}
                       />
                     </div>
@@ -119,7 +121,7 @@ const CurvedSwiper = () => {
                           '/images/home/platforms/Flux_Dev_A_happy_young_Caucasian_woman_with_long_brunette_hair_0.jpg'
                         }
                         loading='lazy'
-                        alt='card image'
+                        alt={t('platforms.card_image_alt')}
                         quality={100}
                       />
                     </div>
@@ -136,7 +138,7 @@ const CurvedSwiper = () => {
                           '/images/home/platforms/Flux_Dev_A_young_Caucasian_male_with_mediumlength_brown_hair_a_1.jpg'
                         }
                         loading='lazy'
-                        alt='card image'
+                        alt={t('platforms.card_image_alt')}
                         quality={100}
                       />
                     </div>
@@ -153,7 +155,7 @@ const CurvedSwiper = () => {
                           '/images/home/platforms/Flux_Dev_A_happy_young_Caucasian_woman_with_long_brunette_hair_2.jpg'
                         }
                         loading='lazy'
-                        alt='card image'
+                        alt={t('platforms.card_image_alt')}
                         quality={100}
                       />
                     </div>

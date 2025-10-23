@@ -1,7 +1,10 @@
 import ExploreMoreButton from '@/components/ui/explore-more-button'
+import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 
 export default function PowerupTools() {
+  const {t} = useTranslation('common')
+  
   return (
     <section
       id='powerup-tools'
@@ -9,11 +12,11 @@ export default function PowerupTools() {
     >
       <div>
         <h2 className='text-[20px] md:text-[48px]'>
-          Power up your work with the best tools
+          {t('powerup_tools.title')}
         </h2>
 
         <h3 className='text-base text-[#D0D2D3] md:text-[24px]'>
-          Work never becomes easier with the help of our productivity tools
+          {t('powerup_tools.subtitle')}
         </h3>
       </div>
 
@@ -28,13 +31,13 @@ export default function PowerupTools() {
           >
             <Image
               src={'/images/icons/bongo.png'}
-              alt='icon'
+              alt={t('powerup_tools.icon_alt')}
               className='size-16'
               width={64}
               height={64}
               quality={100}
             />
-            <p className='text-[#D0D2D3]'>Click Up</p>
+            <p className='text-[#D0D2D3]'>{t('powerup_tools.tool_name')}</p>
           </div>
         ))}
       </div>
@@ -42,7 +45,7 @@ export default function PowerupTools() {
       <div className='black-bg-gradient absolute bottom-[200px] h-[150px] w-full' />
 
       <ExploreMoreButton
-        label={'Explore more'}
+        label={t('powerup_tools.explore_more')}
         link={'/'}
         className='mx-auto'
       />

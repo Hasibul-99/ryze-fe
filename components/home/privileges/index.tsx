@@ -10,19 +10,21 @@ const ReviewCard = ({
   img,
   name,
   body,
+  alt,
 }: {
   img: string
   name: string
   body: string
+  alt: string
 }) => {
   return (
     <Card
       className={cn(
-        'cursor-pointer border border-[#303233] relative w-[180px] overflow-hidden rounded-xl'
+        'relative w-full cursor-pointer overflow-hidden rounded-xl border-none bg-transparent'
       )}
     >
       <CardHeader className='relative size-full h-[130px]'>
-        <Image src={img} alt='footer image' fill quality={100} />
+        <Image src={img} alt={alt} fill quality={100} />
       </CardHeader>
 
       <CardContent className='py-4'>
@@ -64,8 +66,9 @@ export default function Privileges({componentData}: PrivilegesProps) {
             <ReviewCard
               key={idx}
               img={'/images/home/privilege/privilege-1.png'}
-              name={'5% Discount'}
-              body={'Food Panda'}
+              name={t('privileges.discount_name')}
+              body={t('privileges.food_panda')}
+              alt={t('privileges.footer_image_alt')}
             />
           ))}
         </Marquee>
@@ -74,8 +77,9 @@ export default function Privileges({componentData}: PrivilegesProps) {
             <ReviewCard
               key={idx}
               img={'/images/home/privilege/privilege-1.png'}
-              name={'5% Discount'}
-              body={'Food Panda'}
+              name={t('privileges.discount_name')}
+              body={t('privileges.food_panda')}
+              alt={t('privileges.footer_image_alt')}
             />
           ))}
         </Marquee>
