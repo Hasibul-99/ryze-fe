@@ -1,7 +1,9 @@
 import {Fragment} from 'react'
+import { useTranslation } from 'next-i18next'
 import styles from './ott-summary.module.scss'
 
 export default function OttSummaryComponent() {
+  const { t } = useTranslation('common')
   return (
     <div
       style={{
@@ -14,11 +16,10 @@ export default function OttSummaryComponent() {
           <Fragment>
             <div className='max-w-sm'>
               <h3 className='text-3xl font-bold sm:text-4xl lg:text-5xl'>
-                Unlimited 4G Internet
+                {t('telco.unlimited_4g_internet')}
               </h3>
               <p className='text-lg sm:text-xl lg:text-2xl'>
-                Boundless, reliable 4G high-speed network to keep up with your
-                every move
+                {t('telco.boundless_reliable_network')}
               </p>
             </div>
 
@@ -28,11 +29,10 @@ export default function OttSummaryComponent() {
           <Fragment>
             <div className='max-w-sm'>
               <h3 className='text-3xl font-bold sm:text-4xl lg:text-5xl'>
-                OTT: Endless Choices
+                {t('telco.ott_endless_choices')}
               </h3>
               <p className='text-lg sm:text-xl lg:text-2xl'>
-                Curated content across OTT platforms to keep your entertainment
-                fueled to choose from
+                {t('telco.curated_content_platforms')}
               </p>
             </div>
 
@@ -42,10 +42,10 @@ export default function OttSummaryComponent() {
           <Fragment>
             <div className='max-w-sm'>
               <h3 className='text-3xl font-bold sm:text-4xl lg:text-5xl'>
-                AI-Powered App
+                {t('telco.ai_powered_app')}
               </h3>
               <p className='text-lg sm:text-xl lg:text-2xl'>
-                Enhance your SkyLo experience with the most intelligent app
+                {t('telco.enhance_skylo_experience')}
               </p>
             </div>
           </Fragment>

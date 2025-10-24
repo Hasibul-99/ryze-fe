@@ -22,14 +22,14 @@ export default function FreeOtt() {
       >
         <Image
           src={GlobeBack}
-          alt='globe shape back'
+          alt={t('telco.globe_shape_back_alt')}
           style={{opacity: 0.4, top: '0%'}}
           className='md:scale-x-150'
           fill
         />
         <Image
           src={GlobeFront}
-          alt='globe shape front'
+          alt={t('telco.globe_shape_front_alt')}
           style={{top: '0%'}}
           className='md:scale-x-150'
           fill

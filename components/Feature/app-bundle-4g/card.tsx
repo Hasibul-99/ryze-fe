@@ -1,5 +1,6 @@
 import {cn} from '@/lib/utils'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 type Props = {
   className?: string
@@ -9,6 +10,7 @@ type Props = {
 }
 
 export default function Card({className, title, description, icons}: Props) {
+  const { t } = useTranslation('common')
   return (
     <div
       className={cn(
@@ -18,7 +20,7 @@ export default function Card({className, title, description, icons}: Props) {
     >
       <Image
         src='/images/feature/logo.webp'
-        alt='SkyLo log'
+        alt={t('features.skylo_logo_alt')}
         width={134}
         height={32}
       />
@@ -34,7 +36,7 @@ export default function Card({className, title, description, icons}: Props) {
               index === 2 && 'z-0 left-[80px]'
             )}
           >
-            <Image src={icon} alt='icon' width={50} height={50} />
+            <Image src={icon} alt={t('features.icon_alt')} width={50} height={50} />
           </div>
         ))}
       </div>

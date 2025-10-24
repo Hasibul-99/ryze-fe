@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import Image from 'next/image'
 import {useState} from 'react'
+import { useTranslation } from 'next-i18next'
 import styles from './stack-carousel.module.scss'
 
 const Icon = ({
@@ -117,6 +118,7 @@ const packages = [
 ]
 
 export default function StackCarousel() {
+  const { t } = useTranslation('common')
   const [currDeg, setCurrDeg] = useState(0)
   const {width} = useWindowSize()
 
@@ -146,19 +148,19 @@ export default function StackCarousel() {
         <div className='hidden items-center gap-10 lg:flex'>
           <Icon
             src='/images/telco-plans/hoichoi.jpg'
-            alt='Hoichoi'
+            alt={t('telco.hoichoi_alt')}
             className='-rotate-12'
           />
 
           <div className='flex flex-col gap-10'>
             <Icon
               src='/images/telco-plans/chorki.jpg'
-              alt='Chorki'
+              alt={t('telco.chorki_alt')}
               className='rotate-12'
             />
             <Icon
               src='/images/telco-plans/toffee.jpg'
-              alt='YouTube'
+              alt={t('telco.toffee_alt')}
               className='-rotate-12'
             />
           </div>
@@ -200,14 +202,14 @@ export default function StackCarousel() {
                           src='/svgs/skylo-small-logo.svg'
                           width={100}
                           height={25}
-                          alt='SkyLo Logo'
+                          alt={t('telco.skylo_logo_alt')}
                         />
                         <div className='flex items-center gap-1 rounded-full border px-2 py-1'>
                           <Image
                             src='/images/telco-plans/popular.png'
                             height={22}
                             width={22}
-                            alt='icon'
+                            alt={t('telco.popular_icon_alt')}
                           />
                           {/* <p className='text-[10px] sm:text-sm'>Most popular</p> */}
                           <p className='text-[10px]'>{item.tag}</p>
@@ -219,25 +221,25 @@ export default function StackCarousel() {
                           <span>{item.name}</span>
                           {/* <span className='text-xs sm:text-base'> */}
                           <span className='text-xs'>
-                            TK {item.regular_price} / {item.validity}
+                            {t('telco.currency_symbol')} {item.regular_price} / {item.validity}
                           </span>
                         </div>
                         {/* <div className='flex flex-col text-sm sm:text-base'> */}
                         <div className='flex flex-col text-sm'>
                           <span className='flex items-center gap-1'>
                             <MonitorSmartphone size={14} />
-                            {item.otts} OTT
+                            {item.otts} {t('telco.ott_label')}
                           </span>
                           <span className='flex items-center gap-1'>
                             <Globe size={14} />{' '}
                             {Number(item.data_volume) >= 999999 ? (
-                              <span>Endless</span>
+                              <span>{t('telco.endless_label')}</span>
                             ) : (
                               item.data_volume
                             )}
                           </span>
                           <span className='flex items-center gap-1'>
-                            <Phone size={14} /> {item.voice_volume} Min
+                            <Phone size={14} /> {item.voice_volume} {t('telco.min_label')}
                           </span>
                         </div>
                       </div>
@@ -253,19 +255,19 @@ export default function StackCarousel() {
         <div className='hidden items-center gap-10 lg:flex'>
           <Icon
             src='/images/telco-plans/toffee.jpg'
-            alt='Toffee'
+            alt={t('telco.toffee_alt')}
             className='-rotate-12'
           />
 
           <div className='flex flex-col gap-10'>
             <Icon
               src='/images/telco-plans/chorki.jpg'
-              alt='Chorki'
+              alt={t('telco.chorki_alt')}
               className='rotate-12'
             />
             <Icon
               src='/images/telco-plans/hoichoi.jpg'
-              alt='Hoichoi'
+              alt={t('telco.hoichoi_alt')}
               className='-rotate-12'
             />
           </div>

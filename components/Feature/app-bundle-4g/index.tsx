@@ -1,8 +1,10 @@
 import {cn} from '@/lib/utils'
 import Image from 'next/image'
 import Card from './card'
+import { useTranslation } from 'next-i18next'
 
 export default function AppBundle4g() {
+  const { t } = useTranslation('common')
   return (
     <section className='container mt-8 flex flex-col gap-8 sm:flex-row'>
       <div
@@ -13,10 +15,10 @@ export default function AppBundle4g() {
       >
         <div className='curated-gradient flex h-28 flex-col justify-center gap-2 rounded-t-3xl bg-green-500 p-6 pt-16'>
           <h2 className='origin-left text-left text-xl font-semibold transition-all duration-300 sm:text-[40px] sm:group-hover/curated:scale-75'>
-            Curated app bundles
+            {t('features.curated_app_bundles')}
           </h2>
           <p className='text-base opacity-100 transition-opacity duration-300 group-hover/curated:opacity-100 sm:opacity-0'>
-            Curated app bundles
+            {t('features.curated_app_bundles')}
           </p>
         </div>
 
@@ -33,8 +35,8 @@ export default function AppBundle4g() {
                   idx === 2 &&
                     'bottom-[-45px] left-[60px] z-40 origin-bottom-right rotate-[10deg] bg-pink-500 group-hover/card:rotate-[15deg]'
                 )}
-                title={'Starter Package'}
-                description={'Your streaming journey starts here'}
+                title={t('features.starter_package')}
+                description={t('features.streaming_journey')}
                 icons={[
                   '/images/feature/chorki.webp',
                   '/images/feature/chorki.webp',
@@ -66,7 +68,7 @@ export default function AppBundle4g() {
                 src={
                   '/images/feature/I29KvadJM4L05rPlM0UVG7bSLEW4FCiTYgtMUZRx.webp'
                 }
-                alt='telco'
+                alt={t('features.telco_alt')}
                 width={61}
                 height={70}
                 quality={100}
@@ -75,7 +77,7 @@ export default function AppBundle4g() {
           </div>
 
           <p className='text-xl opacity-100 transition-all duration-300 group-hover/4g:opacity-100 sm:mt-[-20px] sm:opacity-0'>
-            The fastest and the most reliable 4G network
+            {t('features.fastest_4g_network')}
           </p>
         </div>
       </div>

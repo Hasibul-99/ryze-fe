@@ -32,7 +32,7 @@ export default function GamificationPrivileges() {
               src={
                 '/images/feature/rxB0ZNSeDPqWLDxC56RwWGXRxSPZGUUKneoSEYBZ.webp'
               }
-              alt='game icon'
+              alt={t('features.game_icon_alt')}
               fill
             />
           </div>
@@ -102,7 +102,7 @@ export default function GamificationPrivileges() {
           className='mx-auto'
           width={460}
           height={105}
-          alt='privileges banner'
+          alt={t('features.privileges_banner_alt')}
           quality={100}
         />
 
@@ -125,7 +125,7 @@ export default function GamificationPrivileges() {
                   src='/images/feature/coin.webp'
                   width={20}
                   height={16}
-                  alt='coin icon'
+                  alt={t('features.coin_icon_alt')}
                 />
               </div>
             </div>

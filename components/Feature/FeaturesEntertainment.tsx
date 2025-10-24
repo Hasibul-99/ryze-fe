@@ -4,8 +4,10 @@ import gsap from 'gsap'
 import {RefreshCcw} from 'lucide-react'
 import Image from 'next/image'
 import {useRef, useState} from 'react'
+import { useTranslation } from 'next-i18next'
 
 export default function FeaturesEntertainment() {
+  const { t } = useTranslation('common')
   const [current, setCurrent] = useState(1)
   const {width} = useWindowSize()
   const sectionRef = useRef(null)
@@ -86,11 +88,10 @@ export default function FeaturesEntertainment() {
 
         <div className='p-5'>
           <h2 className='text-xl font-semibold md:text-[40px]'>
-            Endless Entertainment, Anytime, Anywhere
+            {t('features.entertainment_title')}
           </h2>
           <p className='mt-2 text-base md:text-xl'>
-            Dive into a world of limitless content with curated OTT platforms,
-            streaming your favourite shows and movies wherever life takes you.
+            {t('features.entertainment_description')}
           </p>
         </div>
 
@@ -99,13 +100,13 @@ export default function FeaturesEntertainment() {
             <Image
               src={'/images/feature/eve-1.1.webp'}
               className='image-1 absolute bottom-0 h-fit'
-              alt='cartoon pic'
+              alt={t('features.entertainment_cartoon_alt')}
               fill
             />
             <Image
               src={'/images/feature/eve-1.2.webp'}
               className='image-4 h-fit'
-              alt='news pic'
+              alt={t('features.entertainment_news_alt')}
               fill
             />
           </div>
@@ -114,13 +115,13 @@ export default function FeaturesEntertainment() {
             <Image
               src={'/images/feature/eve-2.1.webp'}
               className='image-3 absolute bottom-0 h-fit'
-              alt='tv series pic'
+              alt={t('features.entertainment_tv_series_alt')}
               fill
             />
             <Image
               src={'/images/feature/eve-2.2.webp'}
               className='image-6 h-fit'
-              alt='game pic'
+              alt={t('features.entertainment_game_alt')}
               fill
             />
           </div>
@@ -132,24 +133,23 @@ export default function FeaturesEntertainment() {
         <div className='relative flex flex-col justify-between gap-10 pl-10 pt-10'>
           <div className='min-h-[156px]'>
             <h2 className='max-w-[360px] text-[40px] font-semibold group-hover:text-3xl'>
-              Endless Entertainment, Anytime, Anywhere
+              {t('features.entertainment_title')}
             </h2>
             <p className='mt-2 block max-w-[360px] text-lg leading-tight transition-all group-hover:block lg:hidden'>
-              Dive into a world of limitless content with curated OTT platforms,
-              streaming your favourite shows and movies wherever life takes you.
+              {t('features.entertainment_description')}
             </p>
           </div>
           <div className='relative h-full min-h-[590px] max-w-[290px]'>
             <Image
               src={'/images/feature/eve-1.1.webp'}
               className='image-1 absolute bottom-0 h-fit'
-              alt='cartoon pic'
+              alt={t('features.entertainment_cartoon_alt')}
               fill
             />
             <Image
               src={'/images/feature/eve-1.2.webp'}
               className='image-4 h-fit'
-              alt='news pic'
+              alt={t('features.entertainment_news_alt')}
               fill
             />
           </div>
@@ -159,13 +159,13 @@ export default function FeaturesEntertainment() {
           <Image
             src={'/images/feature/eve-2.1.webp'}
             className='image-2 absolute top-0 h-fit'
-            alt='music pic'
+            alt={t('features.entertainment_music_alt')}
             fill
           />
           <Image
             src={'/images/feature/eve-2.2.webp'}
             className='image-5 h-fit'
-            alt='music pic'
+            alt={t('features.entertainment_music_alt')}
             fill
           />
         </div>
@@ -181,13 +181,13 @@ export default function FeaturesEntertainment() {
             <Image
               src={'/images/feature/eve-3.1.webp'}
               className='image-3 absolute bottom-0 h-fit'
-              alt='tv series pic'
+              alt={t('features.entertainment_tv_series_alt')}
               fill
             />
             <Image
               src={'/images/feature/eve-3.2.webp'}
               className='image-6 h-fit'
-              alt='game pic'
+              alt={t('features.entertainment_game_alt')}
               fill
             />
           </div>
